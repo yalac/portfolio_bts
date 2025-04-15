@@ -1,5 +1,25 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 
+const pageTitle = "Accueil";
 ---
 
-<h1>Bienvenue dans mon Portfolio !</h1>
+<style>
+    h2 {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 32px;
+        color: black;
+    }
+
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<BaseLayout pageTitle={pageTitle}>
+    <h2>Bienvenue dans mon <a href="/">Portfolio</a> !</h2>
+</BaseLayout>

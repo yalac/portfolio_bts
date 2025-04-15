@@ -1,0 +1,58 @@
+html {
+    background-color: #f1f5f9;
+    font-family: sans-serif;
+}
+
+/* Styles de la navigation */
+
+.hamburger {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger .line {
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin-bottom: 7px;
+    background-color: purple;
+    border-radius: 3px;
+}
+
+/* Styles de la navigation */
+.nav-links {
+    display: none;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: -25%;
+    padding-top: 60px;
+    background-color: lightgray;
+    transition: right 0.5s ease;
+}
+
+.nav-links a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: darkorchid;
+    border-bottom: 2px solid #ddd;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    background-color: pink;
+    color: black;
+}
+
+.expanded {
+    display: unset;
+    right: 0; /* permet d'afficher le volet a droite */
+}
