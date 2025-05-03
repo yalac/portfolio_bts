@@ -1,9 +1,38 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const pageTitle = "A propos";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-    <h2>CV</h2>
+<BaseLayout>
+    <h1>Mon contact</h1>
+    <h2>Vous pouvez dans cette page voir les informations nécessaires pour me contacter</h2>
+    <ul>
+        <li>Mon adresse de ville : 36 rue Sainte Honorine, 27910 Les Hogues</li>
+        <li>Mon adresse e-mail : lacailleyanis@gmail.com</li>
+        <li>Mon numéro de téléphone : 06 58 94 25 22</li>
+    </ul>
+
+    <style>
+        h2 {
+            color: #e6e6e6;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        ul {
+            list-style-type: none;
+            max-width: 550px;
+            margin: 0px auto;
+        }
+        li {
+            background-color: #262626;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            color: #e6e6e6;
+        }
+        li:hover {
+            background-color: #b871ff;
+            color: black;
+        }
+    </style>
 </BaseLayout>

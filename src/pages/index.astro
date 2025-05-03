@@ -1,25 +1,140 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-
-const pageTitle = "Accueil";
 ---
 
+<BaseLayout>
+    <h1>Bienvenue dans mon Portfolio !</h1>
+    <div class="container">
+        <div class="sommaire">
+            <h2>Sommaire</h2>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#formations">Formations</a></li>
+                <li><a href="#langues">Langues</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#loisirs">Loisirs</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="section" id="profil">
+                <h2>Profil</h2>
+                <p>Je suis actuellement un étudiant en BTS SIO (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs.</p>
+            </div>
+            <div class="section" id="formations">
+                <h2>Formations</h2>
+                <p>
+                    <b>Lycée Galilée BAC Général (2024)</b><br /><u>Spécialités</u> : <ul><li>Mathématique,</li><li>Physique-Chimie,</li><li>Science de l’ingénieur,</li></ul><u>Option</u> : <ul><li>Sport</li></ul><br /><b
+                        >Lycée la Chataigneraie (2024-2025) BTS SIO</b
+                    ><br />
+                    <u>Option</u> : <ul><li>SLAM (en cours de formation)</li></ul>
+                </p>
+                <div class="section" id="langues">
+                    <h2>Langues</h2>
+                    <p>Français (langue maternelle)</p>
+                    <p>Anglais niveau B1</p>
+                </div>
+            </div>
+            <div class="section" id="competences">
+                <h2>Compétences</h2>
+                <p><u>Programmation</u> :</p><ul><li>C# .NET,</li><li>Python,</li><li>Astro,</li></ul>
+                <p><u>Sécurité</u> :</p><ul><li>RGPD,</li><li>ANSSI,</li></ul>
+                <p><u>Web</u> :</p><ul><li>HTML,</li><li>CSS,</li><li>PHP,</li></ul>
+                <p><u>SGBDR</u> :</p><ul><li>mySQL,</li><li>SQLServer,</li></ul>
+                <p><u>Gestion</u> :</p><ul><li>PHPmyAdmin,</li><li>SQLServeur,</li></ul>
+            </div>
+            <div class="section" id="certifications">
+                <h2>Certifications</h2>
+                <p>J'ai fait plusieurs formations, et j'ai plusieurs certifications :</p>
+                <ul>
+                    <p>Atelier RGPD</p>
+                    <p>MOOC de l'ANSSI</p>
+                </ul>
+            </div>
+            <div class="section" id="loisirs">
+                <h2>Loisirs</h2>
+                <p>
+                    Je suis membre d'un club de badminton où je m'épanouis à travers la pratique sportive et la participation à des actions caritatives. Le sport est une véritable passion pour moi, tout comme la programmation, que j'aime explorer et
+                    approfondir chez moi.
+                </p>
+            </div>
+        </div>
+    </div>
+</BaseLayout>
+
 <style>
-    h2 {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        font-size: 32px;
-        color: black;
+    /* Styles généraux */
+    body {
+        background-color: #1a1a1a;
+        font-family: "Arial", sans-serif;
+        color: #e6e6e6;
+        margin: 0;
+        padding: 0;
     }
 
-    a {
-        font-weight: bold;
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* Style pour le sommaire */
+    .sommaire {
+        width: 15%;
+        padding: 10px;
+        background-color: #262626;
+        border-radius: 5px;
+        margin: 10px;
+        height: fit-content;
+    }
+
+    .sommaire ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .sommaire ul li {
+        margin: 10px 0;
+    }
+
+    .sommaire ul li a {
+        color: #a64dff;
         text-decoration: none;
-        color: black;
+    }
+
+    .sommaire ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Style pour les sections principales */
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .section {
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    /* Style pour les icônes de loisirs */
+    .loisirs-icons {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+
+    .loisirs-icons img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Style pour les titres */
+    h2 {
+        color: #e6e6e6;
+        border-bottom: 2px solid #a64dff;
+        padding-bottom: 5px;
     }
 </style>
-
-<BaseLayout pageTitle={pageTitle}>
-    <h2>Bienvenue dans mon <a href="/">Portfolio</a> !</h2>
-</BaseLayout>

@@ -3,31 +3,62 @@
 ---
 
 <footer>
+    <section class="legal-links">
+        <a href="/legalNotice/">Mentions Légales</a>
+        <a href="/generalConditionsUtility/">Conditions générales d'utilisations (CGU)</a>
+    </section>
+    <div class="social-links">
+        <a href="https://www.github.com/yalac" target="_blank" aria-label="Github">Github</a>
+        <a href="https://www.linkedin.com/in/yanis-lacaille" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+    </div>
     <p>© Site réalisé par LACAILLE Yanis</p>
-    <a href={`https://www.github.com/yalac`} target="_blank">Github</a>
-    <a href={`https://www.linkedin.com/in/yanis-lacaille`} target="_blank">Linkedln</a>
 </footer>
 
 <style>
-    footer {
-        display: block;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 7px;
-        background-color: purple;
-    }
-    a,
-    p {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 750px;
         margin: 0;
-        padding: 7px;
-        color: lightgray;
+        background: #1a1a1a;
+        color: #e6e6e6;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px; /* Réduction du padding */
+        background: #262626;
+        margin-top: auto;
+        border-top: 2px solid #a64dff;
+    }
+    .legal-links,
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px; /* Réduction de l'espacement */
+    }
+    .legal-links a,
+    .social-links a {
+        margin: 3px; /* Réduction des marges */
+        padding: 3px; /* Réduction des paddings */
+        font-size: 12px; /* Réduction de la taille de police */
+        color: #a64dff;
         text-decoration: none;
     }
-    a {
-        margin-right: 10px;
-        float: right;
+    .legal-links a:hover,
+    .social-links a:hover {
+        color: #fff;
+    }
+    .social-links a {
+        border: 1px solid #a64dff; /* Réduction de l'épaisseur de la bordure */
+        border-radius: 6px; /* Réduction du rayon des coins */
+    }
+    footer p {
+        margin: 0;
+        font-size: 12px; /* Réduction de la taille de police */
+        text-align: center;
+        color: lightgray;
     }
 </style>
