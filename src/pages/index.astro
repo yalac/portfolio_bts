@@ -19,57 +19,89 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <div class="content">
             <div class="section" id="profil">
                 <h2>Profil</h2>
-                <p>Je suis actuellement un étudiant en BTS SIO (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs.</p>
+                <p>
+                    Je suis actuellement un étudiant en BTS SIO (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs. Pour mon contacte : voir <a
+                        href="/about"><u>ici</u></a
+                    >.
+                </p>
             </div>
             <div class="section" id="formations">
                 <h2>Formations</h2>
                 <p>
-                    <b>Lycée Galilée BAC Général (2024)</b><br /><u>Spécialités</u> : <ul><li>Mathématique,</li><li>Physique-Chimie,</li><li>Science de l’ingénieur,</li></ul><u>Option</u> : <ul><li>Sport</li></ul><br /><b
-                        >Lycée la Chataigneraie (2024-2025) BTS SIO</b
-                    ><br />
+                    <b><a href="https://galilee.lycee.ac-normandie.fr/" target="_blank">Lycée Galilée</a> BAC Général (2024)</b><br /><u>Spécialités</u> : <ul><li>Mathématique,</li><li>Physique-Chimie,</li><li>Science de l’ingénieur,</li></ul><u
+                        >Option</u
+                    > : <ul><li>Sport</li></ul><br /><b><a href="https://www.la-chataigneraie.org/" target="_blank">Campus la Chataigneraie</a> (2024-2025) BTS SIO</b><br />
                     <u>Option</u> : <ul><li>SLAM (en cours de formation)</li></ul>
                 </p>
-                <div class="section" id="langues">
-                    <h2>Langues</h2>
-                    <p>Français (langue maternelle)</p>
-                    <p>Anglais niveau B1</p>
-                </div>
+            </div>
+            <div class="section" id="langues">
+                <h2>Langues</h2>
+                <p>Français (langue maternelle)</p>
+                <p>Anglais niveau B1</p>
             </div>
             <div class="section" id="competences">
                 <h2>Compétences</h2>
-                <p><u>Programmation</u> :</p><ul><li>C# .NET,</li><li>Python,</li><li>Astro,</li></ul>
-                <p><u>Sécurité</u> :</p><ul><li>RGPD,</li><li>ANSSI,</li></ul>
-                <p><u>Web</u> :</p><ul><li>HTML,</li><li>CSS,</li><li>PHP,</li></ul>
-                <p><u>SGBDR</u> :</p><ul><li>mySQL,</li><li>SQLServer,</li></ul>
-                <p><u>Gestion</u> :</p><ul><li>PHPmyAdmin,</li><li>SQLServeur,</li></ul>
+                <div class="competences-grid">
+                    <ul>
+                        <p><u>Programmation</u> :</p>
+                        <li>C# .NET</li>
+                        <li>Python</li>
+                        <li>Astro</li>
+                    </ul>
+                    <ul>
+                        <p><u>Sécurité</u> :</p>
+                        <li>RGPD</li>
+                        <li>ANSSI</li>
+                    </ul>
+                    <ul>
+                        <p><u>Web</u> :</p>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                    </ul>
+                    <ul>
+                        <p><u>SGBDR</u> :</p>
+                        <li>mySQL</li>
+                        <li>SQLServer</li>
+                    </ul>
+                    <ul>
+                        <p><u>Gestion</u> :</p>
+                        <li>PHPmyAdmin</li>
+                        <li>SQLServeur</li>
+                    </ul>
+                </div>
             </div>
-            <div class="section" id="certifications">
-                <h2>Certifications</h2>
-                <p>J'ai fait plusieurs formations, et j'ai plusieurs certifications :</p>
-                <ul>
-                    <p>Atelier RGPD</p>
-                    <p>MOOC de l'ANSSI</p>
-                </ul>
-            </div>
-            <div class="section" id="loisirs">
-                <h2>Loisirs</h2>
-                <p>
-                    Je suis membre d'un club de badminton où je m'épanouis à travers la pratique sportive et la participation à des actions caritatives. Le sport est une véritable passion pour moi, tout comme la programmation, que j'aime explorer et
-                    approfondir chez moi.
-                </p>
+            <div class="section certifications-loisirs">
+                <div class="certifications" id="certifications">
+                    <h2><a href="/certification">Certifications</a></h2>
+                    <p>J'ai fait plusieurs formations, et j'ai plusieurs certifications :</p>
+                    <ul>
+                        <li>Atelier RGPD</li>
+                        <li>MOOC de l'ANSSI</li>
+                        <li>Pix</li>
+                    </ul>
+                </div>
+                <div class="loisirs" id="loisirs">
+                    <h2>Loisirs</h2>
+                    <p>
+                        Je suis membre d'un club de badminton où je m'épanouis à travers la pratique sportive et la participation à des actions caritatives. Le sport est une véritable passion pour moi, tout comme la programmation, que j'aime explorer
+                        et approfondir chez moi.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </BaseLayout>
 
 <style>
-    /* Styles généraux */
-    body {
-        background-color: #1a1a1a;
-        font-family: "Arial", sans-serif;
+    a {
         color: #e6e6e6;
-        margin: 0;
-        padding: 0;
+        text-decoration-line: none;
+    }
+    h2 {
+        color: #e6e6e6;
+        border-bottom: 2px solid #a64dff;
+        padding-bottom: 5px;
     }
 
     .container {
@@ -77,7 +109,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         flex-wrap: wrap;
     }
 
-    /* Style pour le sommaire */
     .sommaire {
         width: 15%;
         padding: 10px;
@@ -93,7 +124,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     }
 
     .sommaire ul li {
-        margin: 10px 0;
+        margin: 10px;
     }
 
     .sommaire ul li a {
@@ -101,40 +132,43 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         text-decoration: none;
     }
 
-    .sommaire ul li a:hover {
-        text-decoration: underline;
-    }
-
-    /* Style pour les sections principales */
     .content {
         display: flex;
         flex-direction: column;
         width: 80%;
     }
 
-    .section {
+    #profil,
+    #competences,
+    #formations,
+    #langues {
         background-color: #333;
         padding: 10px;
         border-radius: 5px;
         margin: 10px;
     }
 
-    /* Style pour les icônes de loisirs */
-    .loisirs-icons {
+    /* Style pour les compétences */
+    .competences-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .competences-grid ul li {
+        margin-left: 35px;
+    }
+
+    .certifications-loisirs {
         display: flex;
-        justify-content: space-around;
-        margin-top: 10px;
+        justify-content: space-between;
     }
 
-    .loisirs-icons img {
-        width: 50px;
-        height: 50px;
-    }
-
-    /* Style pour les titres */
-    h2 {
-        color: #e6e6e6;
-        border-bottom: 2px solid #a64dff;
-        padding-bottom: 5px;
+    .certifications,
+    .loisirs {
+        width: 45%;
+        background-color: #333;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
     }
 </style>
