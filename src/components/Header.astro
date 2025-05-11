@@ -7,20 +7,39 @@ import PhotoProfil from "/public/imgs/ImageProfil.jpg";
 
 <header>
     <nav>
-        <a href="/"><Image src={PhotoProfil} alt="Photo de profil" height={50} width={50} /></a>LACAILLE Yanis
+        <a href="/" class="profile-link">
+            <Image src={PhotoProfil} alt="Photo de profil" height={50} width={50} />
+            <span class="name">LACAILLE Yanis</span>
+        </a>
         <Hamburger />
         <Navigation />
     </nav>
 </header>
 
 <style>
-    img {
-        border-radius: 50%;
-        object-fit: cover;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
     }
 
-    a {
-        color: #e6e6e6;
+    .profile-link {
+        display: flex;
+        align-items: center;
         text-decoration: none;
+        color: #e6e6e6;
+    }
+
+    .profile-link img {
+        border-radius: 50px;
+        object-fit: cover;
+        margin-right: 8px;
+    }
+
+    .name {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
     }
 </style>
