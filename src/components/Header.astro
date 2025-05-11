@@ -1,11 +1,26 @@
 ---
+import { Image } from "astro:assets";
 import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
+import PhotoProfil from "/public/imgs/ImageProfil.jpg";
 ---
 
 <header>
     <nav>
+        <a href="/"><Image src={PhotoProfil} alt="Photo de profil" height={50} width={50} /></a>LACAILLE Yanis
         <Hamburger />
         <Navigation />
     </nav>
 </header>
+
+<style>
+    img {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    a {
+        color: #e6e6e6;
+        text-decoration: none;
+    }
+</style>

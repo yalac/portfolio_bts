@@ -1,5 +1,12 @@
 ---
+import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CertificationANSSI from "/public/imgs/CertificationANSSI.png";
+import CertificationRGPDm1 from "/public/imgs/CertificationRGPDm1.png";
+import CertificationRGPDm2 from "/public/imgs/CertificationRGPDm2.png";
+import CertificationRGPDm3 from "/public/imgs/CertificationRGPDm3.png";
+import CertificationRGPDm4 from "/public/imgs/CertificationRGPDm4.png";
+import CertificationRGPDm5 from "/public/imgs/CertificationRGPDm5.png";
 ---
 
 <BaseLayout>
@@ -9,24 +16,24 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         <li>
             <h3><a href="https://atelier-rgpd.cnil.fr/" target="_blank">Atelier RGPD</a></h3>
             <p>Module 1</p>
-            <img src="/src/imgs/CertificationRGPDm1.png" height="480" width="640" />
+            <Image src={CertificationRGPDm1} alt="Certification RGPD Module 1" height={480} width={640} />
             <p>Module 2</p>
-            <img src="/src/imgs/CertificationRGPDm2.png" height="480" width="640" />
+            <Image src={CertificationRGPDm2} alt="Certification RGPD Module 2" height={480} width={640} />
             <p>Module 3</p>
-            <img src="/src/imgs/CertificationRGPDm3.png" height="480" width="640" />
+            <Image src={CertificationRGPDm3} alt="Certification RGPD Module 3" height={480} width={640} />
             <p>Module 4</p>
-            <img src="/src/imgs/CertificationRGPDm4.png" height="480" width="640" />
+            <Image src={CertificationRGPDm4} alt="Certification RGPD Module 4" height={480} width={640} />
             <p>Module 5</p>
-            <img src="/src/imgs/CertificationRGPDm5.png" height="480" width="640" />
+            <Image src={CertificationRGPDm5} alt="Certification RGPD Module 5" height={480} width={640} />
             <p>Module 6 (bientôt)</p>
         </li>
         <li>
             <h3><a href="https://secnumacademie.gouv.fr/auth/login" target="_blank">MOOC de l'ANSSI</a></h3>
-            <img src="/src/imgs/CertificationANSSI.png" height="480" width="640" />
+            <Image src={CertificationANSSI} alt="Certification RGPD Module 5" height={480} width={640} />
         </li>
         <li>
             <h3><a href="https://app.pix.fr/connexion" target="_blank">Pix</a></h3>
-            <p>(bientôt)<p></p></p>
+            <p>(bientôt)</p>
         </li>
     </ul>
 </BaseLayout>

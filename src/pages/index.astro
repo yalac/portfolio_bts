@@ -36,8 +36,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </div>
             <div class="section" id="langues">
                 <h2>Langues</h2>
-                <p>Français (langue maternelle)</p>
                 <p>Anglais niveau B1</p>
+                <p>Allemand niveau A2</p>
             </div>
             <div class="section" id="competences">
                 <h2>Compétences</h2>
@@ -73,11 +73,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </div>
             <div class="section certifications-loisirs">
                 <div class="certifications" id="certifications">
-                    <h2><a href="/certification">Certifications</a></h2>
+                    <h2>Certifications</h2>
                     <p>J'ai fait plusieurs formations, et j'ai plusieurs certifications :</p>
                     <ul>
-                        <li>Atelier RGPD</li>
-                        <li>MOOC de l'ANSSI</li>
+                        <li><a href="/certification">Atelier RGPD</a></li>
+                        <li><a href="/certification">MOOC de l'ANSSI</a></li>
                         <li>Pix</li>
                     </ul>
                 </div>
@@ -96,8 +96,13 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <style>
     a {
         color: #e6e6e6;
-        text-decoration-line: none;
+        text-decoration: none;
     }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
     h2 {
         color: #e6e6e6;
         border-bottom: 2px solid #a64dff;
