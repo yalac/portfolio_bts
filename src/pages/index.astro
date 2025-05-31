@@ -10,8 +10,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <ul>
                 <li><a href="#profil">Profil</a></li>
                 <li><a href="#formations">Formations</a></li>
-                <li><a href="#langues">Langues</a></li>
                 <li><a href="#competences">Compétences</a></li>
+                <li><a href="#langues">Langues</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#loisirs">Loisirs</a></li>
             </ul>
@@ -20,7 +20,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="section" id="profil">
                 <h2>Profil</h2>
                 <p>
-                    Je suis actuellement un étudiant en BTS SIO (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs. Pour mon contacte : voir <a
+                    Je suis actuellement un étudiant en BTS SIO (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs. Pour mon contact : voir <a
                         href="/about"><u>ici</u></a
                     >.
                 </p>
@@ -28,16 +28,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <div class="section" id="formations">
                 <h2>Formations</h2>
                 <p>
-                    <b><a href="https://galilee.lycee.ac-normandie.fr/" target="_blank">Lycée Galilée</a> BAC Général (2024)</b><br /><u>Spécialités</u> : <ul><li>Mathématique,</li><li>Physique-Chimie,</li><li>Science de l’ingénieur,</li></ul><u
-                        >Option</u
-                    > : <ul><li>Sport</li></ul><br /><b><a href="https://www.la-chataigneraie.org/" target="_blank">Campus la Chataigneraie</a> (2024-2025) BTS SIO</b><br />
-                    <u>Option</u> : <ul><li>SLAM (en cours de formation)</li></ul>
+                    2024-2025 | <b>BTS SIO</b> (Service Informatique aux Organisations)<br />
+                    <a href="https://www.la-chataigneraie.org/" target="_blank"><span class="commentaire">Campus la Chataigneraie</span></a><br />
+                    <u>Option</u> : <ul><li>SLAM (solution logiciel application métier) <span class="commentaire">(en cours de formation)</span></li></ul><br />
+                    2024 | <b>Bac Général</b><br />
+                    <a href="https://galilee.lycee.ac-normandie.fr/" target="_blank"><span class="commentaire">Lycée Galilée</span></a><br />
+                    <u>Spécialités</u> :
+                    <ul>
+                        <li>Mathématique,</li>
+                        <li>Physique-Chimie,</li>
+                        <li>Science de l’ingénieur,</li>
+                    </ul>
+                    <u>Option</u> :
+                    <ul>
+                        <li>Sport</li>
+                    </ul>
                 </p>
-            </div>
-            <div class="section" id="langues">
-                <h2>Langues</h2>
-                <p>Anglais niveau B1</p>
-                <p>Allemand niveau A2</p>
             </div>
             <div class="section" id="competences">
                 <h2>Compétences</h2>
@@ -50,8 +56,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     </ul>
                     <ul>
                         <p><u>Sécurité</u> :</p>
-                        <li>RGPD</li>
-                        <li>ANSSI</li>
+                        <li><a href="/certification">RGPD</a></li>
+                        <li><a href="/certification">ANSSI</a></li>
                     </ul>
                     <ul>
                         <p><u>Web</u> :</p>
@@ -61,15 +67,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     </ul>
                     <ul>
                         <p><u>SGBDR</u> :</p>
-                        <li>mySQL</li>
-                        <li>SQLServer</li>
-                    </ul>
-                    <ul>
-                        <p><u>Gestion</u> :</p>
-                        <li>PHPmyAdmin</li>
-                        <li>SQLServeur</li>
+                        <li>mySQL (PHPmyAdmin)</li>
+                        <li>SQLServer (SQL Serveur Management Studio)</li>
                     </ul>
                 </div>
+            </div>
+            <div class="section" id="langues">
+                <h2>Langues</h2>
+                <p>Anglais niveau B1</p>
+                <p>Allemand niveau A2</p>
             </div>
             <div class="section certifications-loisirs">
                 <div class="certifications" id="certifications">
@@ -175,5 +181,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         padding: 10px;
         border-radius: 5px;
         margin: 10px;
+    }
+
+    .commentaire {
+        font-style: italic;
+        color: #858383;
+        font-size: 15px;
     }
 </style>

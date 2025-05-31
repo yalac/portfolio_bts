@@ -1,0 +1,55 @@
+---
+import Footer from "../components/Footer.astro";
+import "../styles/markdown.css";
+const { frontmatter } = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <h1>{frontmatter.titre}</h1>
+        <p class="date">{frontmatter.date}</p>
+        <div class="markdown-content">
+            <slot />
+        </div>
+        <p class="retour-arriere">
+            <a href="/realPro/">⟸</a>
+            Retourner à mes réalisations professionnelles
+        </p>
+        <Footer />
+    </body>
+</html>
+
+<style>
+    h1 {
+        color: #ffce47;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .date {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .retour-arriere {
+        background: #262626;
+        color: #a64dff;
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin: 15px auto auto;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .retour-arriere a {
+        color: #e6e6e6;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .retour-arriere a:hover {
+        font-weight: bold;
+        font-size: 25px;
+    }
+</style>

@@ -1,0 +1,40 @@
+h2 {
+    color: #a64dff;
+    border-bottom: 2px solid #a64dff;
+    font-size: 25px;
+}
+
+p {
+    color: #e6e6e6;
+    font-size: 18px;
+    text-align: center;
+}
+
+.markdown-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 20px;
+    background: #232323;
+    border-radius: 20px;
+}
+
+.markdown-content li {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.markdown-content a {
+    color: #a64dff;
+    text-decoration: none;
+}
+
+.markdown-content a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.markdown-content img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}

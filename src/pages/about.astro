@@ -6,9 +6,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <h1>Mon contact</h1>
     <h2>Vous pouvez dans cette page voir les informations nécessaires pour me contacter</h2>
     <ul>
-        <li>Mon adresse de ville : 36 rue Sainte Honorine, 27910 Les Hogues</li>
-        <li>Mon adresse e-mail : lacailleyanis@gmail.com</li>
-        <li>Mon numéro de téléphone : 06 58 94 25 22</li>
+        <li>
+            <a
+                href="https://www.google.fr/maps/place/36+Rue+Sainte-Honorine,+27910+Les+Hogues/@49.4205894,1.3941987,17z/data=!3m1!4b1!4m6!3m5!1s0x47e0d4bee31a9b65:0x1a7965e04d82a680!8m2!3d49.4205859!4d1.3967736!16s%2Fg%2F11pwvwlzxt?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                >Mon adresse de ville : 36 rue Sainte Honorine, 27910 Les Hogues
+            </a>
+        </li>
+        <li><a href="mailto:lacailleyanis@gmail.com">Mon adresse e-mail : lacailleyanis@gmail.com</a></li>
+        <li><a href="tel:0658942522">Mon numéro de téléphone : 06 58 94 25 22</a></li>
     </ul>
 
     <style>
@@ -33,6 +39,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         li:hover {
             background-color: #b871ff;
             color: black;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e6e6e6;
         }
     </style>
 </BaseLayout>
