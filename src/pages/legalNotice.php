@@ -1,6 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
+?php
+    $heure = date("H:i:s");
+    echo "Bonjour ! Il est actuellement $heure.";
+?>
 
 <BaseLayout>
     <h1>Mentions légales du site Portfolioynsl</h1>
