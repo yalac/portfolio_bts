@@ -1,28 +1,28 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ImageBidon1 from "/public/imgs/imageBidon1.png";
+import ImageAttestation1 from "/public/imgs/attestationStageSigne.png";
 import ImageBidon2 from "/public/imgs/imageBidon2.png";
 ---
 
 <BaseLayout>
-    <h1>Résumé de mes compétence</h1>
+    <h1>Résumé de mes compétences</h1>
     <h2>Épreuve E5</h2>
     <h3>Voici mon tableau de synthèse joint <a href="/YLA_TableauDeSynthese.xlsx" target="_blank">ici</a></h3>
-    <h3>Attestion de stage</h3>
+    <h3>Attestation de stage</h3>
     <ul class="skills-list">
         <li>
             <div class="images-row">
                 <div class="img">
                     1<sup>ère</sup> année de BTS SIO option SLAM
                     <div>
-                        <Image src={ImageBidon1} alt="Photo de profil" height={320} width={240} />
+                        <Image src={ImageAttestation1} alt="Attestation de stage 1ère année" height={480} width={360} />
                     </div>
                 </div>
                 <div class="img">
-                    2<sup>nd</sup> année de BTS SIO option SLAM
+                    2<sup>nde</sup> année de BTS SIO option SLAM
                     <div>
-                        <Image src={ImageBidon2} alt="Photo de profil" height={320} width={240} />
+                        <Image src={ImageBidon2} alt="Attestation de stage 2nde année" height={480} width={360} />
                     </div>
                 </div>
             </div>

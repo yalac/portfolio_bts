@@ -7,11 +7,11 @@ date: "Réalisé le 05/11/2024"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus la chataigneraie, nous avons dû apprendre à faire du C#. Pour cela nous avons vu plusieurs notion importantes dont les méthodes.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons dû apprendre à programmer en C#. Pour cela, nous avons étudié plusieurs notions importantes, dont les méthodes.
 
-## Compétence concerné
+## Compétences concernées
 
-Les compétences concernés sont
+Les compétences concernées sont
 
 [Gérer le patrimoine informatique](../realPro/) (1.2, 1.3 et 1.5)\
 [Répondre aux incidents et aux demandes d’assistance et d’évolution](../realPro/) (2.3)\
@@ -22,7 +22,7 @@ Les compétences concernés sont
 
 Pour cette réalisation, j'ai utilisé Rider et le langage C# pour programmer.
 
-## Preuve
+## Preuves
 
 _Le logiciel Rider_\
 ![Rider](../../../public/imgs/Preuve/rider.png)
