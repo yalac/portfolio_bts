@@ -13,7 +13,7 @@ Dans le cadre de mon **_stage au Lycée Galilée_**, j'ai dû apprendre le JSON 
 
 La compétence concernée est
 
-[Développer la présence en ligne de l’organisation](../realPro) (3.3)
+[Développer la présence en ligne de l’organisation](/realPro) (3.3)
 
 ## Environnement technologique
 

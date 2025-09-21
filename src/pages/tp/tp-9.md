@@ -13,7 +13,7 @@ Dans le cadre de mon **_BTS SIO_** au Campus la Châtaigneraie, nous avons dû a
 
 Les compétences concernées sont
 
-[Mettre à disposition des utilisateurs un service informatique](../realPro) (5.1 et 5.2)
+[Mettre à disposition des utilisateurs un service informatique](/realPro) (5.1 et 5.2)
 
 ## Environnement technologique
 
