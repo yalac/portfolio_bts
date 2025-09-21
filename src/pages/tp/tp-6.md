@@ -13,8 +13,8 @@ Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons dû a
 
 Les compétences concernées sont
 
-[Gérer le patrimoine informatique](../realPro/) (1.2)\
-[Développer la présence en ligne de l’organisation](../realPro/) (3.3)
+[Gérer le patrimoine informatique](../realPro) (1.2)\
+[Développer la présence en ligne de l’organisation](../realPro) (3.3)
 
 ## Environnement technologique
 

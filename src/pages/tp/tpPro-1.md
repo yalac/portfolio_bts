@@ -59,10 +59,10 @@ Chaque fonctionnalité a été développée en concertation et validée par le m
 
 Les compétences concernées sont
 
-[Gérer le patrimoine informatique](../realPro/) (1.2 et 1.5)\
-[Développer la présence en ligne de l’organisation](../realPro/) (3.2)\
-[Travailler en mode projet](../realPro/) (4.1, 4.2 et 4.3)\
-[Mettre à disposition des utilisateurs un service informatique](../realPro/) (5.2)
+[Gérer le patrimoine informatique](../realPro) (1.2 et 1.5)\
+[Développer la présence en ligne de l’organisation](../realPro) (3.2)\
+[Travailler en mode projet](../realPro) (4.1, 4.2 et 4.3)\
+[Mettre à disposition des utilisateurs un service informatique](../realPro) (5.2)
 
 ## Environnement technologique
 
