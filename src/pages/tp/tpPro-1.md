@@ -64,7 +64,7 @@ Chaque fonctionnalité a été développée en concertation et validée par le m
 Les compétences concernées sont
 
 [Gérer le patrimoine informatique](/realPro) (1.2)\
-[Développer la présence en ligne de l’organisation](/realPro) (3.2)\
+[Développer la présence en ligne de l’organisation](/realPro) (3.2 et 3.3)\
 [Travailler en mode projet](/realPro) (4.2)\
 [Mettre à disposition des utilisateurs un service informatique](/realPro) (5.2)
 
@@ -72,11 +72,14 @@ Les compétences concernées sont
 
 _Le site que j'ai créé_\
 ![Site](../../../public/imgs/Preuve/siteCree.png)
-_Le logiciel Visual Studio Code_\
-![Visual Studio Code](../../../public/imgs/Preuve/visualStudioCode.png)
+_MDN Web Docs_
+![MDN Web Docs](../../../public/imgs/Preuve/mdnWebDocs.png)\
 _Plusieurs exemples du code utilisé_\
 ![Exemple de code HTML](../../../public/imgs/Preuve/codeStageHTML.png)
 ![Exemple de code CSS](../../../public/imgs/Preuve/codeStageCSS.png)
 ![Exemple de code PHP](../../../public/imgs/Preuve/codeStagePHP.png)\
+_Deux exemples du code JSON utilisé_\
+![Exemple de code JSON nom](../../../public/imgs/Preuve/codeStageJSONname.png)\
+![Exemple de code JSON materiaux](../../../public/imgs/Preuve/codeStageJSONmateriel.png)\
 _Schéma réalisé avec Paint_\
 ![Exemple de paint](../../../public/imgs/Preuve/schemaPaint.png)
