@@ -15,6 +15,10 @@ Le projet vise à créer un site web pour le Lycée Galilée afin de faciliter l
 
 Le développement s’est appuyé sur une feuille de suivi existante et des Google Forms, mais il a nécessité la création d’un site dédié intégrant ces outils et ajoutant les fonctionnalités demandées.
 
+## Environnement technologique
+
+Pour réaliser le site, j'ai utilisé Visual Studio Code pour la programmation en HTML, CSS, PHP et JSON. De plus, j'ai utilisé Wamp afin de visualiser en local ce que je faisais en temps réel, l'hébergeur FreeHostingNoAds et Paint pour réaliser des schémas et visualiser ce que je voulais faire avant de passer à la réalisation.
+
 ## Fonctionnalités principales
 
 1. <span style="text-align:left; display:block">**Gestion du stock par salle et rangement pour la microbiologie**</span>
@@ -63,10 +67,6 @@ Les compétences concernées sont
 [Développer la présence en ligne de l’organisation](/realPro) (3.2)\
 [Travailler en mode projet](/realPro) (4.2)\
 [Mettre à disposition des utilisateurs un service informatique](/realPro) (5.2)
-
-## Environnement technologique
-
-Pour réaliser le site, j'ai utilisé Visual Studio Code pour la programmation en HTML, CSS, PHP et JSON. De plus, j'ai utilisé Wamp afin de visualiser en local ce que je faisais en temps réel, l'hébergeur FreeHostingNoAds et Paint pour réaliser des schémas et visualiser ce que je voulais faire avant de passer à la réalisation.
 
 ## Preuves
 
