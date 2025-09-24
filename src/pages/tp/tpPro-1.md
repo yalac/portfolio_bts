@@ -21,7 +21,7 @@ Le développement s’est appuyé sur une feuille de suivi existante et des Goog
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Saisie des quantités de matériel restant, catégorisation par salle et rangement, affichage des manques avec des codes couleurs et indication de la date du dernier réassort.<br>
     <span style="color:red">_Réalisation :_</span> Création de pages HTML et PHP pour la saisie et l’affichage dynamique des stocks avec codes couleurs ainsi qu'une ligne pour la date et le nom du dernier réassort.</span>
-    <img src="/public/imgs/Preuve/fonctionnaliteUn.png" alt="Preuve 1ere fonctionnalité" style="width:360px; height:280px">
+    <img src="/public/imgs/Preuve/fonctionnaliteUn" alt="Preuve 1ere fonctionnalité" style="width:360px; height:280px">
 
 2. <span style="text-align:left; display:block">**Préparation du matériel pour les séances**</span>
 
