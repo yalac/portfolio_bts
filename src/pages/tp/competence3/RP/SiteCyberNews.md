@@ -22,6 +22,6 @@ Pour réaliser ce site, j'ai utilisé plusieurs langages tels que : PHP, HTML, C
 ## Preuves
 
 _Base de données contenant les informations sur mes veilles_\
-![Preuve de ma bd](../../../../../public/imgs/PreuveRP/siteNewsBaseDonnees.png)
+![Preuve de ma bd](/imgs/PreuveRP/siteNewsBaseDonnees.png)
 _Ce à quoi ressemble mon site_\
-![Preuve visuel du site](../../../../../public/imgs/PreuveRP/siteNewsVisuel.png)
+![Preuve visuel du site](/imgs/PreuveRP/siteNewsVisuel.png)

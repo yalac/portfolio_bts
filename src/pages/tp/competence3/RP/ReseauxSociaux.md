@@ -22,4 +22,4 @@ Pour ce qui est des réseaux sociaux, j'ai créé un compte LinkedIn. J'ai égal
 ## Preuves
 
 _Mon compte LinkedIn_\
-![LinkedIn](../../../../../public/imgs/PreuveRP/Linkedln.png)
+![LinkedIn](/imgs/PreuveRP/Linkedln.png)

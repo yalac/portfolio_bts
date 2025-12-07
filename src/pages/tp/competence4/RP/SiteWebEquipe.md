@@ -23,4 +23,4 @@ Pour réaliser ce site, j'ai utilisé le logiciel Trello.
 ## Preuves
 
 _Trello_
-![Trello](../../../../../public/imgs/PreuveRP/Trello.png)
+![Trello](/imgs/PreuveRP/Trello.png)

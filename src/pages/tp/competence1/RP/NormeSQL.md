@@ -22,6 +22,6 @@ Pour cette réalisation, j'ai utilisé MySQL via WAMP.
 ## Preuves
 
 _MySQL_\
-![Mysql](../../../../../public/imgs/PreuveRP/Mysql.png)
+![Mysql](/imgs/PreuveRP/Mysql.png)
 _Exemple des normes de contraintes_\
-![Contrainte de PK et de FK](../../../../../public/imgs/PreuveRP/ContraintesPKFK.png)
+![Contrainte de PK et de FK](/imgs/PreuveRP/ContraintesPKFK.png)

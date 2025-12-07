@@ -22,6 +22,6 @@ Pour réaliser mon CV et mon portfolio, j'ai utilisé Canva pour mon CV et le la
 ## Preuves
 
 _Le site Canva_\
-![canva](../../../../../public/imgs/PreuveRP/Canva.png)
+![canva](/imgs/PreuveRP/Canva.png)
 _Le logiciel Visual Studio Code_\
-![Visual Studio Code](../../../../../public/imgs/PreuveRP/visualStudioCode.png)
+![Visual Studio Code](/imgs/PreuveRP/visualStudioCode.png)

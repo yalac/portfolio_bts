@@ -22,6 +22,6 @@ Pour cette réalisation, j'ai utilisé Rider.
 ## Preuves
 
 _Rider_\
-![Rider](../../../../../public/imgs/PreuveRP/Rider.png)
+![Rider](/imgs/PreuveRP/Rider.png)
 _Exemple des différentes conventions de nommages que j'au pu apprendre_\
-![Conventions de nommage](../../../../../public/imgs/PreuveRP/ConventionNommage.png)
+![Conventions de nommage](/imgs/PreuveRP/ConventionNommage.png)

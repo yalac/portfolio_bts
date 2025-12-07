@@ -22,6 +22,6 @@ Pour réaliser ce site, j'ai utilisé plusieurs langages tels que : PHP, HTML, C
 ## Preuves
 
 _Ma base de données créée sur PhpMyAdmin_
-![Preuve de ma base de données](../../../../../public/imgs/PreuveRP/siteEquipeBaseDonnees.png)
+![Preuve de ma base de données](/imgs/PreuveRP/siteEquipeBaseDonnees.png)
 _Représentation du visuel de mon site_
-![Preuve du visuel de mon site](../../../../../public/imgs/PreuveRP/siteEquipeVisuel.png)
+![Preuve du visuel de mon site](/imgs/PreuveRP/siteEquipeVisuel.png)

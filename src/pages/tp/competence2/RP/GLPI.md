@@ -22,6 +22,6 @@ Pour cette réalisation, j'ai utilisé GLPI.
 ## Preuves
 
 _GLPI_\
-![GLPI](../../../../../public/imgs/PreuveRP/GLPI.png)\
+![GLPI](/imgs/PreuveRP/GLPI.png)\
 _Page d'accueil de GLPI_\
-![Accueil GLPI](../../../../../public/imgs/PreuveRP/AccueilGLPI.png)
+![Accueil GLPI](/imgs/PreuveRP/AccueilGLPI.png)

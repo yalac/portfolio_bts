@@ -23,6 +23,6 @@ Pour cette réalisation, j'ai des sites internet qui proposent des certification
 ## Preuves
 
 _Le site freeCodeCamp_\
-![FreeCodeCamp](../../../../../public/imgs/PreuveRP/freeCodeCamp.png)
+![FreeCodeCamp](/imgs/PreuveRP/freeCodeCamp.png)
 _Codecademy_\
-![Codecademy](../../../../../public/imgs/PreuveRP/Codecademy.png)
+![Codecademy](/imgs/PreuveRP/Codecademy.png)

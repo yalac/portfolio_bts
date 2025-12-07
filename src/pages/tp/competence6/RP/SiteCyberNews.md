@@ -22,6 +22,6 @@ Pour réaliser ce site, j'ai utilisé des outils comme feedly, google alerts, ou
 ## Preuves
 
 _Feedly_\
-![feedly](../../../../../public/imgs/PreuveRP/feedly.png)
+![feedly](/imgs/PreuveRP/feedly.png)
 _The Old Readers_\
-![old reader](../../../../../public/imgs/PreuveRP/TheOldReader.png)
+![old reader](/imgs/PreuveRP/TheOldReader.png)

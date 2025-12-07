@@ -22,4 +22,4 @@ Pour déployer ce site j'ai utilisé Byethost.
 ## Preuves
 
 _Byethost_
-![Byethost](../../../../../public/imgs/PreuveRP/Byethost.png)
+![Byethost](/imgs/PreuveRP/Byethost.png)

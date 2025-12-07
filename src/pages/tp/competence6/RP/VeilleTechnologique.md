@@ -23,4 +23,4 @@ Pour effectuer ma veille technologique, j'ai utilisé plusieurs outils de veille
 ## Preuves
 
 _Mon outil de veille Feedly_\
-![Feedly](../../../../../public/imgs/Preuve/feedly.png)
+![Feedly](/imgs/Preuve/feedly.png)

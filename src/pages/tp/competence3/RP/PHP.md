@@ -22,6 +22,6 @@ Pour cette réalisation, j'ai utilisé Visual Studio Code, PHP, HTML ainsi que W
 ## Preuves
 
 _Le logiciel Visual Studio Code_\
-![Visual Studio Code](../../../../../public/imgs/PreuveRP/visualStudioCode.png)
+![Visual Studio Code](/imgs/PreuveRP/visualStudioCode.png)
 _Exemple du langage PHP (HyperText Preprocessor)_\
-![Exemple de code](../../../../../public/imgs/PreuveRP/langagePhp.png)
+![Exemple de code](/imgs/PreuveRP/langagePhp.png)
