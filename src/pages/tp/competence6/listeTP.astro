@@ -1,0 +1,125 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+    <h1>Réalisations professionnelles</h1>
+    <h2>Liste des RP ayant contribué à l'acquisition de ma compétence <br />Bloc 1 - Sous-partie 6 : Organiser son développement professionnel</h2>
+    <p class="intro">Ici vous trouverez la liste de toutes les RP que j'ai réalisé avec leur contexte, leur environnement technologique, et les preuves qui m'ont permis d'acquérir les compétences en questions</p>
+
+    <ul class="competences">
+        <li class="competence-item">
+            <h3>6.1 Mettre en place son environnement d'apprentissage personnel</h3>
+            <p><a href="RP/FormationPCC" class="rp-link">Formation PCC</a><span class="desc"> - Temps libre pour effectuer des certifications et apprendre des langages</span></p>
+            <p><a href="RP/VeilleTechnologique" class="rp-link">Veille technologique</a><span class="desc"> - Mise en place d'une veille qui me permet de me renseigner et d'apprendre</span></p>
+        </li>
+
+        <li class="competence-item">
+            <h3>6.2 Mettre en œuvre des outils et stratégies de veille informationnelle</h3>
+            <p><a href="RP/VeilleTechnologique" class="rp-link">Veille technologique</a><span class="desc"> - Mise en place d'une veille qui s'appuie sur des outils et stratégies de veille</span></p>
+            <p><a href="RP/SiteCyberNews" class="rp-link">Site CyberNews</a><span class="desc"> - Création d'un site sur les actualités en cybersécurité qui fait appel à des outils de veille</span></p>
+        </li>
+
+        <li class="competence-item">
+            <h3>6.3 Gérer son identité professionnelle</h3>
+            <p><a href="RP/ReseauxSociaux" class="rp-link">Les réseaux sociaux (LinkedIn)</a><span class="desc"> - Gestion de mon identité numérique</span></p>
+            <p><a href="RP/PortfolioCV" class="rp-link">Portfolio et CV</a><span class="desc"> - Présentation de mon parcours et de mon CV et donc de mon identité</span></p>
+        </li>
+
+        <li class="competence-item">
+            <h3>6.4 Développer son projet professionnel</h3>
+            <p><a href="RP/ReseauxSociaux" class="rp-link">Les réseaux sociaux (LinkedIn)</a><span class="desc"> - Gestion de mon identité numérique et de mon éventuelle poursuite professionnelle</span></p>
+            <p><a href="RP/FormationPCC" class="rp-link">Formation PCC</a><span class="desc"> - Temps libre pour effectuer des certifications pour mes futurs projets professionnels</span></p>
+        </li>
+    </ul>
+
+    <p class="retour-arriere">
+        <a href="/realPro/">⟸ Retour à mes réalisations professionnelles</a>
+    </p>
+</BaseLayout>
+
+<style>
+    h1 {
+        color: #a64dff;
+        border-bottom: 1px solid #a64dff;
+        padding-bottom: 10px;
+        font-size: 40px;
+    }
+
+    h2 {
+        color: #d9b3ff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .intro {
+        color: white;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .competences {
+        list-style: none;
+        padding: 10px;
+        margin: 30px;
+        margin-top: auto;
+    }
+
+    .competence-item {
+        border-left: 3px solid #a64dff;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+    }
+
+    .competence-item:hover {
+        background: #262626;
+    }
+
+    .competence-item h3 {
+        color: #a64dff;
+        margin: 0 0 20px;
+        font-size: 18px;
+    }
+
+    .competence-item p {
+        color: #dfdfdf;
+        margin: 10px 25px;
+    }
+
+    .rp-link {
+        color: #9bcdfe;
+        text-decoration: none;
+    }
+
+    .rp-link:hover {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .desc {
+        color: #858383;
+        font-size: 14px;
+    }
+
+    .retour-arriere {
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .retour-arriere a {
+        display: inline-block;
+        background: #262626;
+        color: #a64dff;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        border: 1px solid #a64dff;
+    }
+
+    .retour-arriere a:hover {
+        background: #a64dff;
+        color: #1a1a1a;
+    }
+</style>

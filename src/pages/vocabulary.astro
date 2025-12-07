@@ -6,12 +6,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <script>
         import "../scripts/recherche.js";
     </script>
-    <div style="text-align:center">
-        <input id="vocabulaire-recherche" type="text" placeholder="Rechercher un mot..." style="padding:10px; width:50%; border-radius:10px; border:1px solid #a64dff; background:#1a1a1a; color:#fff; font-size:12px;" />
+    <div class="search-container">
+        <input id="vocabulaire-recherche" type="text" placeholder="🔍 Rechercher un mot..." />
     </div>
+
     <div class="vocab-container">
         <h1>Dictionnaires</h1>
         <span class="description">Je vais, dans cette page, vous expliquer les mots compliqués que j'ai utilisés dans mon portfolio (définitions d'après différents sites).</span>
+
         <div class="vocab-list">
             <h2 class="vocabulaire-mot">Unité astronomique</h2>
             <p class="vocabulaire-definition">
@@ -81,9 +83,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
             <h2 class="vocabulaire-mot">Parsec</h2>
             <p class="vocabulaire-definition">
-                Le parsec est une unité de longueur utilisée en astronomie, correspondant à la distance à laquelle une unité astronomique apparaît sous un angle de 1/3600 de degré. (D'après <a
-                    href="https://www.futura-sciences.com/sciences/definitions/univers-parsec-55/"
-                    target="_blank">Futura science</a
+                Le parsec est une unité de longueur utilisée en astronomie, correspondant à exactement 648,000/π unités astronomiques. (D'après <a href="https://www.futura-sciences.com/sciences/definitions/univers-parsec-55/" target="_blank"
+                    >Futura science</a
                 >)
             </p>
 
@@ -96,7 +97,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
             <h2 class="vocabulaire-mot">Naine brune</h2>
             <p class="vocabulaire-definition">
-                Une naine brune est un objet trop gros pour être une planète, mais pas assez pour être une étoile. Elle ne brille pas comme une étoile, mais peut émettre un peu de chaleur. (D'après moi, mélange de plusieurs définitions.)
+                Une naine brune est un objet trop gros pour être une planète, mais pas assez pour être une étoile. Elle ne brille pas comme une étoile, mais peut émettre un peu de chaleur. (Mélange de plusieurs sources.)
             </p>
 
             <h2 class="vocabulaire-mot">Rover Perseverance</h2>
@@ -117,7 +118,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
             <h2 class="vocabulaire-mot">SHERLOC</h2>
             <p class="vocabulaire-definition">
-                SHERLOC est un instrument du rover Perseverance, qui cherche des indices dans des roches martiennes, en tandem avec la caméra WATSON. (D'après la <a
+                SHERLOC est un instrument du rover Perseverance, qui cherche des indices dans des roches martiennes, en coopération avec une caméra. (D'après la <a
                     href="https://www.jpl.nasa.gov/news/the-detective-aboard-nasas-perseverance-rover/"
                     target="_blank">NASA</a
                 >)
@@ -141,7 +142,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
             <h2 class="vocabulaire-mot">GLOVE</h2>
             <p class="vocabulaire-definition">
-                GLOVE signifie : l'expérience d'observation et de validation du Goddard Space Flight Center Lidar. (D'après la <a
+                Il s'agit de l'expérience d'observation et de validation du Goddard Space Flight Center Lidar. (D'après la <a
                     href="https://www.nasa.gov/centers-and-facilities/armstrong/testing-in-the-clouds-nasa-flies-to-improve-satellite-data-/"
                     target="_blank">NASA</a
                 >)
@@ -203,7 +204,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
             <h2 class="vocabulaire-mot">Galaxie active</h2>
             <p class="vocabulaire-definition">
-                Une galaxie active abrite un Noyau Actif de Galaxie (NAG), une région centrale très lumineuse. (D'après <a href="https://www.techno-science.net/glossaire-definition/Galaxie-active.html" target="_blank">Techno-science</a>)
+                C'est une galaxie qui abrite un Noyau Actif de Galaxie (NAG). (D'après <a href="https://www.techno-science.net/glossaire-definition/Galaxie-active.html" target="_blank">Techno-science</a>)
             </p>
 
             <h2 class="vocabulaire-mot">Comète</h2>
@@ -243,69 +244,594 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     target="_blank">l'Office d'Astronomie pour l'éducation</a
                 >)
             </p>
+
+            <h2 class="vocabulaire-mot">Institut de physique moderne de Chine</h2>
+            <p class="vocabulaire-definition">
+                Fondé en 1957, l'Institut de physique moderne (IMP) de l'Académie chinoise des sciences, avec plus de 900 membres du personnel et plus de 400 étudiants, est devenu le centre de recherche le plus important pour la science et la
+                technologie de l'ion lourd en Chine. (D'après <a href="https://english.imp.cas.cn/about/introduction/" target="_blank">l'IMP</a> de l'académie Chinoise)
+            </p>
+
+            <h2 class="vocabulaire-mot">Tempête géomagnétique</h2>
+            <p class="vocabulaire-definition">
+                Phénomène causé lorsque une grande quantité de particules chargées envoyées par le Soleil perturbe le champ magnétique de la Terre. Cela peut intensifier les aurores, mais aussi provoquer des problèmes pour les satellites, les
+                communications et, dans de rares cas, les réseaux électriques. (D'après <a href="https://astro4edu.org/fr/resources/glossary/term/128/" target="_blank">Office de l'Astronomie</a> pour l'éducation)
+            </p>
+
+            <h2 class="vocabulaire-mot">Ions lourds</h2>
+            <p class="vocabulaire-definition">
+                Atomes lourds ayant gagné ou perdu des électrons. (D'après <a href="https://fr.wikipedia.org/wiki/Ion" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Champ magnétique</h2>
+            <p class="vocabulaire-definition">
+                Force invisible influençant les particules chargées. (D'après <a href="https://fr.wikipedia.org/wiki/Champ_magnétique" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Gaz interstellaire</h2>
+            <p class="vocabulaire-definition">
+                Gaz rare qui occupe l'espace entre les étoiles. (D'après <a href="https://fr.wikipedia.org/wiki/Milieu_interstellaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Gravitation</h2>
+            <p class="vocabulaire-definition">
+                Force d’attraction entre les masses. (D'après <a href="https://fr.wikipedia.org/wiki/Gravitation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Gravité</h2>
+            <p class="vocabulaire-definition">
+                Force ressentie au sol due à la gravitation. (D'après <a href="https://fr.wikipedia.org/wiki/Gravitation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Noyau Actif de Galaxie (NAG)</h2>
+            <p class="vocabulaire-definition">
+                Centre de galaxie très lumineux, alimenté par un trou noir. (D'après <a href="https://fr.wikipedia.org/wiki/Noyau_actif_de_galaxie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Plasma</h2>
+            <p class="vocabulaire-definition">
+                Gaz très chaud composé de particules chargées. (D'après <a href="https://fr.wikipedia.org/wiki/Plasma" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Observatoire astronomique</h2>
+            <p class="vocabulaire-definition">
+                Lieu équipé pour observer le ciel. (D'après <a href="https://fr.wikipedia.org/wiki/Observatoire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Cratère Jezero</h2>
+            <p class="vocabulaire-definition">
+                Cratère martien exploré par Perseverance. (D'après <a href="https://fr.wikipedia.org/wiki/Cratère_Jezero" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Aérospatiale</h2>
+            <p class="vocabulaire-definition">
+                Domaine lié aux technologies spatiales et aéronautiques. (D'après <a href="https://fr.wikipedia.org/wiki/Aérospatiale" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Plasma solaire</h2>
+            <p class="vocabulaire-definition">
+                Couche de gaz chargé autour du Soleil. (D'après <a href="https://fr.wikipedia.org/wiki/Soleil" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Héliosphère</h2>
+            <p class="vocabulaire-definition">
+                Atmosphère du Soleil. (D'après <a href="https://fr.wikipedia.org/wiki/Héliosphère" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Supernova type II</h2>
+            <p class="vocabulaire-definition">
+                Explosion d'une étoile massive. (D'après <a href="https://fr.wikipedia.org/wiki/Supernova_de_type_II" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Supernova type Ia</h2>
+            <p class="vocabulaire-definition">
+                Explosion d’une naine blanche. (D'après <a href="https://fr.wikipedia.org/wiki/Supernova_de_type_Ia" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Glace volatile</h2>
+            <p class="vocabulaire-definition">
+                Glace se sublimant facilement. (D'après <a href="https://fr.wikipedia.org/wiki/Glace_(minéral)" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Noyaux légers</h2>
+            <p class="vocabulaire-definition">
+                Atomes de faible masse. (D'après <a href="https://fr.wikipedia.org/wiki/Nucléosynthèse" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Noyaux lourds</h2>
+            <p class="vocabulaire-definition">
+                Atomes de masse lourds. (D'après <a href="https://fr.wikipedia.org/wiki/Atome" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Molécule</h2>
+            <p class="vocabulaire-definition">
+                Ensemble d’atomes liés. (D'après <a href="https://fr.wikipedia.org/wiki/Molécule" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Grain de matière</h2>
+            <p class="vocabulaire-definition">
+                Petite particule solide dans l’espace. (D'après <a href="https://fr.wikipedia.org/wiki/Poussièrre_interstellaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Matière gazeuse</h2>
+            <p class="vocabulaire-definition">
+                Matière sous forme de gaz. (D'après <a href="https://fr.wikipedia.org/wiki/Gaz" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Méthane</h2>
+            <p class="vocabulaire-definition">
+                Gaz simple, et combustible à fort potentiel. (D'après <a href="https://fr.wikipedia.org/wiki/Méthane" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Ammoniac</h2>
+            <p class="vocabulaire-definition">
+                Gaz utilisé comme réfrigérants. (D'après <a href="https://fr.wikipedia.org/wiki/Ammoniac" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Attraction gravitationnelle</h2>
+            <p class="vocabulaire-definition">
+                Attirance due à la gravitation. (D'après <a href="https://fr.wikipedia.org/wiki/Gravitation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Particule chargée</h2>
+            <p class="vocabulaire-definition">
+                Particule portant une charge électrique. (D'après <a href="https://fr.wikipedia.org/wiki/Particule" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Satellites</h2>
+            <p class="vocabulaire-definition">
+                Objets en orbite autour d’une planète. (D'après <a href="https://fr.wikipedia.org/wiki/Satellite" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Force gravitationnelle</h2>
+            <p class="vocabulaire-definition">
+                Force entre deux masses. (D'après <a href="https://fr.wikipedia.org/wiki/Gravitation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Pixels</h2>
+            <p class="vocabulaire-definition">
+                Points élémentaires d’une image numérique. (D'après <a href="https://fr.wikipedia.org/wiki/Pixel" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Infrarouge</h2>
+            <p class="vocabulaire-definition">
+                Rayonnement invisible émis par des objets chauds. (D'après <a href="https://fr.wikipedia.org/wiki/Infrarouge" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Nuage de gaz</h2>
+            <p class="vocabulaire-definition">
+                Région spatiale remplie de gaz. (D'après <a href="https://fr.wikipedia.org/wiki/Nuage_moléculaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Rayonnement</h2>
+            <p class="vocabulaire-definition">
+                Émission d'énergie sous forme d'ondes. (D'après <a href="https://fr.wikipedia.org/wiki/Rayonnement" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Ions chargés</h2>
+            <p class="vocabulaire-definition">
+                Atomes ayant une charge électrique. (D'après <a href="https://fr.wikipedia.org/wiki/Ion" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Éruptions solaires</h2>
+            <p class="vocabulaire-definition">
+                Éjections d'énergie depuis le Soleil. (D'après <a href="https://fr.wikipedia.org/wiki/Éruption_solaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Données spectrales</h2>
+            <p class="vocabulaire-definition">
+                Données issues de la lumière décomposée. (D'après <a href="https://fr.wikipedia.org/wiki/Spectroscopie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Aérosols</h2>
+            <p class="vocabulaire-definition">
+                Particules en suspension dans un gaz. (D'après <a href="https://fr.wikipedia.org/wiki/Aérosol" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Prévisions météorologiques</h2>
+            <p class="vocabulaire-definition">
+                Modèles anticipant le temps. (D'après <a href="https://fr.wikipedia.org/wiki/Météorologie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Objet cosmique</h2>
+            <p class="vocabulaire-definition">
+                Tout objet dans l'Univers. (D'après <a href="https://fr.wikipedia.org/wiki/Astre" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Pancake domes</h2>
+            <p class="vocabulaire-definition">
+                Volcans aplatis sur Vénus. (D'après <a href="https://en.wikipedia.org/wiki/Pancake_dome" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Mission Magellan</h2>
+            <p class="vocabulaire-definition">
+                Mission radar cartographiant Vénus. (D'après <a href="https://fr.wikipedia.org/wiki/Magellan_(sonde_spatiale)" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Observatoire Vera Rubin</h2>
+            <p class="vocabulaire-definition">
+                Grand observatoire du ciel profond. (D'après <a href="https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Galaxie spirale</h2>
+            <p class="vocabulaire-definition">
+                Galaxie avec bras courbés. (D'après <a href="https://fr.wikipedia.org/wiki/Galaxie_spirale" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Trou noir</h2>
+            <p class="vocabulaire-definition">
+                Objet dont rien ne s'échappe. (D'après <a href="https://fr.wikipedia.org/wiki/Trou_noir" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Hubble</h2>
+            <p class="vocabulaire-definition">
+                Télescope spatial célèbre. (D'après <a href="https://fr.wikipedia.org/wiki/T%C3%A9lescope_spatial_Hubble" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Galaxie Seyfert type 2</h2>
+            <p class="vocabulaire-definition">
+                Galaxie active très lumineuse et poussiéreuse. (D'après <a href="https://fr.wikipedia.org/wiki/Galaxie_de_Seyfert" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Astrométrie</h2>
+            <p class="vocabulaire-definition">
+                Mesure des positions des astres. (D'après <a href="https://fr.wikipedia.org/wiki/Astrométrie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Astéroïde</h2>
+            <p class="vocabulaire-definition">
+                Petit corps rocheux orbitant le Soleil. (D'après <a href="https://fr.wikipedia.org/wiki/Astéroïde" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Simulation</h2>
+            <p class="vocabulaire-definition">
+                Reproduction numérique d'un phénomène. (D'après <a href="https://fr.wikipedia.org/wiki/Simulation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Modélisation</h2>
+            <p class="vocabulaire-definition">
+                Création d'un modèle pour comprendre un phénomène. (D'après <a href="https://fr.wikipedia.org/wiki/Modélisation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Rayonnement cosmique</h2>
+            <p class="vocabulaire-definition">
+                Particules venant de l'espace. (D'après <a href="https://fr.wikipedia.org/wiki/Rayonnement_cosmique" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">ETH Zurich</h2>
+            <p class="vocabulaire-definition">
+                Université scientifique suisse. (D'après <a href="https://en.wikipedia.org/wiki/ETH_Zurich" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">SUSTech</h2>
+            <p class="vocabulaire-definition">
+                Université chinoise de technologie. (D'après <a href="https://en.wikipedia.org/wiki/Southern_University_of_Science_and_Technology" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Géologie</h2>
+            <p class="vocabulaire-definition">
+                Science des structures planétaires. (D'après <a href="https://fr.wikipedia.org/wiki/Géologie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Modèle analytique</h2>
+            <p class="vocabulaire-definition">
+                Modèle basé sur des équations. (D'après <a href="https://fr.wikipedia.org/wiki/Modèle_mathématique" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Dissipation d'énergie</h2>
+            <p class="vocabulaire-definition">
+                Perte d'énergie dans un système. (D'après <a href="https://fr.wikipedia.org/wiki/Dissipation" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Réacteurs nucléaires</h2>
+            <p class="vocabulaire-definition">
+                Installations produisant de l'énergie nucléaire. (D'après <a href="https://fr.wikipedia.org/wiki/Réacteur_nucléaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Données AAVSO et SMARTS</h2>
+            <p class="vocabulaire-definition">
+                Mesures d'étoiles variables. (D'après <a href="https://www.aavso.org" target="_blank">AAVSO</a> et <a href="https://www.astro.yale.edu/smarts" target="_blank">SMARTS</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Analyse spectrale</h2>
+            <p class="vocabulaire-definition">
+                Étude de la lumière pour connaître la composition. (D'après <a href="https://fr.wikipedia.org/wiki/Spectroscopie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Raies d'hydrogène et de fer</h2>
+            <p class="vocabulaire-definition">
+                Signatures lumineuses caractéristiques. (D'après <a href="https://fr.wikipedia.org/wiki/Ligne_spectrale" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Environnement interstellaire</h2>
+            <p class="vocabulaire-definition">
+                Région entre les étoiles. (D'après <a href="https://fr.wikipedia.org/wiki/Milieu_interstellaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Sismomètre InSight</h2>
+            <p class="vocabulaire-definition">
+                Appareil mesurant les séismes martiens. (D'après <a href="https://fr.wikipedia.org/wiki/InSight" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Grumeaux rocheux géants</h2>
+            <p class="vocabulaire-definition">
+                Masses solides dans le manteau martien. (D'après <a href="https://fr.wikipedia.org/wiki/Géologie_de_Mars" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Manteau martien</h2>
+            <p class="vocabulaire-definition">
+                Couche intermédiaire sous la croûte de Mars. (D'après <a href="https://fr.wikipedia.org/wiki/Mars" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Tectonique de plaques</h2>
+            <p class="vocabulaire-definition">
+                Mouvements des plaques d'une planète. (D'après <a href="https://fr.wikipedia.org/wiki/Tectonique_des_plaques" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Chercheur de Caltech</h2>
+            <p class="vocabulaire-definition">
+                Scientifique du Caltech. (D'après <a href="https://www.caltech.edu" target="_blank">Caltech</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Actes de l'Académie nationale des sciences</h2>
+            <p class="vocabulaire-definition">
+                Revue scientifique PNAS. (D'après <a href="https://www.pnas.org" target="_blank">PNAS</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Mission Juno</h2>
+            <p class="vocabulaire-definition">
+                Mission étudiant Jupiter. (D'après <a href="https://fr.wikipedia.org/wiki/Juno_(sonde_spatiale)" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Géante gazeuse</h2>
+            <p class="vocabulaire-definition">
+                Planète composée principalement de gaz. (D'après <a href="https://fr.wikipedia.org/wiki/Géante_gazeuse" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Consortium</h2>
+            <p class="vocabulaire-definition">
+                Groupe d'institutions collaborant. (D'après <a href="https://fr.wikipedia.org/wiki/Consortium" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Mission Euclid (ESA)</h2>
+            <p class="vocabulaire-definition">
+                Mission étudiants matière/énergie sombres. (D'après <a href="https://fr.wikipedia.org/wiki/Euclid_(satellite)" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Propriété d'une galaxie</h2>
+            <p class="vocabulaire-definition">
+                Caractéristiques mesurables d'une galaxie. (D'après <a href="https://fr.wikipedia.org/wiki/Galaxie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Joachim Stadel</h2>
+            <p class="vocabulaire-definition">
+                Astrophysicien spécialiste des simulations. (D'après <a href="https://en.wikipedia.org/wiki/Joachim_Stadel" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Télescope Euclid</h2>
+            <p class="vocabulaire-definition">
+                Instrument spatial d'Euclid. (D'après <a href="https://fr.wikipedia.org/wiki/Euclid_(satellite)" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Matière noire</h2>
+            <p class="vocabulaire-definition">
+                Matière invisible détectée par la gravité. (D'après <a href="https://fr.wikipedia.org/wiki/Matière_noire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Événement céleste</h2>
+            <p class="vocabulaire-definition">
+                Phénomène observable dans le ciel. (D'après <a href="https://fr.wikipedia.org/wiki/Phénomène_céleste" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Données du ciel nocturne</h2>
+            <p class="vocabulaire-definition">
+                Observations astronomiques nocturnes. (D'après <a href="https://fr.wikipedia.org/wiki/Astronomie" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Université de Pittsburgh</h2>
+            <p class="vocabulaire-definition">
+                Institution universitaire américaine. (D'après <a href="https://www.pitt.edu" target="_blank">University of Pittsburgh</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Orbite géosynchrone</h2>
+            <p class="vocabulaire-definition">
+                Orbite qui suit la rotation terrestre. (D'après <a href="https://fr.wikipedia.org/wiki/Orbite_géosynchrone" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Centre SHREC</h2>
+            <p class="vocabulaire-definition">
+                Centre de recherche en technologies spatiales. (D'après <a href="https://www.shrec.org" target="_blank">SHREC</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Lockheed Martin</h2>
+            <p class="vocabulaire-definition">
+                Entreprise aérospatiale américaine. (D'après <a href="https://en.wikipedia.org/wiki/Lockheed_Martin" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">NVST</h2>
+            <p class="vocabulaire-definition">
+                Télescope solaire chinois. (D'après <a href="https://en.wikipedia.org/wiki/New_Vacuum_Solar_Telescope" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">SDO</h2>
+            <p class="vocabulaire-definition">
+                Observatoire solaire de la NASA. (D'après <a href="https://en.wikipedia.org/wiki/Solar_Dynamics_Observatory" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Données multi-longueurs d'ondes</h2>
+            <p class="vocabulaire-definition">
+                Observations dans plusieurs types de lumière. (D'après <a href="https://fr.wikipedia.org/wiki/Astronomie_multispectrale" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Jets solaires</h2>
+            <p class="vocabulaire-definition">
+                Fils de plasma expulsés du Soleil. (D'après <a href="https://fr.wikipedia.org/wiki/Éruption_solaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Activité solaire</h2>
+            <p class="vocabulaire-definition">
+                Phénomènes à la surface du Soleil. (D'après <a href="https://fr.wikipedia.org/wiki/Activité_solaire" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Croissance super-Eddington</h2>
+            <p class="vocabulaire-definition">
+                Accrétion plus rapide que la limite théorique. (D'après <a href="https://en.wikipedia.org/wiki/Eddington_luminosity" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Monstres de milliards de masses solaires</h2>
+            <p class="vocabulaire-definition">
+                Trous noirs supermassifs. (D'après <a href="https://fr.wikipedia.org/wiki/Trou_noir_supermassif" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">JWST</h2>
+            <p class="vocabulaire-definition">
+                Grand télescope spatial infrarouge. (D'après <a href="https://fr.wikipedia.org/wiki/James_Webb_Space_Telescope" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Big Bang</h2>
+            <p class="vocabulaire-definition">
+                Naissance de l'Univers. (D'après <a href="https://fr.wikipedia.org/wiki/Big_Bang" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Trous noirs « graines »</h2>
+            <p class="vocabulaire-definition">
+                Premiers trous noirs de l'Univers. (D'après <a href="https://en.wikipedia.org/wiki/Black_hole_seed" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Ère inflationnaire</h2>
+            <p class="vocabulaire-definition">
+                Expansion extrêmement rapide après le Big Bang. (D'après <a href="https://fr.wikipedia.org/wiki/Inflation_cosmique" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Modèle FPLUME</h2>
+            <p class="vocabulaire-definition">
+                Modèle décrivant la dynamique d'un panache volcanique. (D'après <a href="https://en.wikipedia.org/wiki/Volcanic_plume" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Panaches volcaniques</h2>
+            <p class="vocabulaire-definition">
+                Colonnes de gaz et cendres émises par un volcan. (D'après <a href="https://fr.wikipedia.org/wiki/Panache_volcanique" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">DAVINCI & VERITAS</h2>
+            <p class="vocabulaire-definition">
+                Missions futures pour étudier Vénus. (D'après <a href="https://www.nasa.gov/venus" target="_blank">NASA</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Exo-Vénus</h2>
+            <p class="vocabulaire-definition">
+                Planètes ressemblant à Vénus autour d'autres étoiles. (D'après <a href="https://en.wikipedia.org/wiki/Venus-like_planet" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Électrons</h2>
+            <p class="vocabulaire-definition">
+                Particules très légères, chargées négativement, qui tournent autour du noyau des atomes et participent à l’électricité. (D'après <a href="https://www.britannica.com/science/electron" target="_blank">Britannica</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Particules chargées</h2>
+            <p class="vocabulaire-definition">
+                Particules qui possèdent une charge électrique, comme les électrons, et réagissent aux champs électriques et magnétiques. (D'après <a href="https://fr.wikipedia.org/wiki/Particule_chargée" target="_blank">Wikipédia</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Aéronautique</h2>
+            <p class="vocabulaire-definition">
+                Domaine consacré à la conception, la construction et l'utilisation des avions et engins volants dans l’atmosphère. (D'après <a href="https://www.britannica.com/technology/aeronautics" target="_blank">Britannica</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Charge électrique</h2>
+            <p class="vocabulaire-definition">
+                Propriété des particules qui fait qu’elles s'attirent ou se repoussent selon qu’elles sont de charges opposées ou identiques (D'après <a href="https://www.britannica.com/science/electric-charge" target="_blank">Britannica</a>)
+            </p>
+
+            <h2 class="vocabulaire-mot">Ciel profond</h2>
+            <p class="vocabulaire-definition">
+                Ensemble des objets astronomiques très éloignés (galaxies, nébuleuses, amas d’étoiles) observables principalement au télescope. (D'après <a
+                    href="https://www.skyatnightmagazine.com/advice/skills/deep-sky-astronomy-beginners-guide"
+                    target="_blank">BBC</a
+                >)
+            </p>
+
+            <h2 class="vocabulaire-mot">Champ électrique</h2>
+            <p class="vocabulaire-definition">
+                Région de l’espace où une charge électrique subit une force. Un champ électrique est créé par des charges électriques ou par des variations de champs magnétiques. (D'après <a
+                    href="https://www.britannica.com/science/electric-field"
+                    target="_blank">Britannica</a
+                >)
+            </p>
         </div>
     </div>
 </BaseLayout>
 
 <style>
+    .search-container {
+        text-align: center;
+        padding: 30px 20px;
+        background: linear-gradient(135deg, #0f0f1e 0%, #1a0f2e 100%);
+    }
+
+    #vocabulaire-recherche {
+        padding: 12px 20px;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 50px;
+        border: 1px solid #7c3aed;
+        background: #0f0f1e;
+        color: #ffffff;
+        font-size: 16px;
+    }
+
     .vocab-container {
-        max-width: 1000px;
-        margin: 50px auto;
-        padding: 20px;
-        background: #232323;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 40px;
         border-radius: 20px;
     }
 
     h1 {
         text-align: center;
-        color: #a64dff;
+        background: linear-gradient(135deg, #7c3aed 0%, #a78bfa 100%);
+        background-clip: text;
         font-size: 40px;
-        margin-bottom: 10px;
     }
 
     .description {
-        display: block;
         text-align: center;
-        color: #b3b3b3;
-        margin-bottom: 20px;
-        font-size: 12px;
+        color: #b0b0b0;
+        font-size: 15px;
     }
 
     .vocabulaire-mot {
         margin-top: 30px;
         margin-bottom: 5px;
-        font-weight: bold;
         font-size: 25px;
-        color: #a64dff;
+        color: #7c3aed;
     }
 
-    .vocabulaire-definition,
-    p {
-        padding: 10px 20px;
-        border-radius: 10px;
-        background: #342a4e;
-        color: #e6e6e6;
-        font-size: 17px;
+    .vocabulaire-mot:hover {
+        color: #a78bfa;
     }
 
-    .vocabulaire-definition ul {
-        list-style: none;
+    .vocabulaire-definition {
+        padding: 18px 24px;
+        background: #1e1b4b;
+        border-radius: 30px;
+        color: #e5e7eb;
+        font-size: 16px;
+        line-height: 1.5;
+        border-left: 4px solid #7c3aed;
     }
-    .vocabulaire-definition li {
-        position: relative;
-    }
-    .vocabulaire-definition li::before {
-        content: "-";
-        font-weight: bold;
-        margin-right: 10px;
+
+    .vocabulaire-definition:hover {
+        background: #2e1a47;
     }
 
     .vocabulaire-definition a {
-        color: #a64dff;
+        color: #7c3aed;
         text-decoration: none;
     }
 
     .vocabulaire-definition a:hover {
+        color: #a78bfa;
         text-decoration: underline;
+        font-weight: bold;
     }
 </style>

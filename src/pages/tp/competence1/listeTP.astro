@@ -1,0 +1,136 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+    <h1>Réalisations professionnelles</h1>
+    <h2>Liste des RP ayant contribué à l'acquisition de ma compétence <br />Bloc 1 - Sous-partie 1 : Gestion du patrimoine informatique</h2>
+    <p class="intro">Ici vous trouverez la liste de toutes les RP que j'ai réalisé avec leur contexte, leur environnement technologique, et les preuves qui m'ont permis d'acquérir les compétences en questions</p>
+
+    <ul class="competences">
+        <li class="competence-item">
+            <h3>1.1 Recenser et identifier les ressources numériques</h3>
+            <p class="empty">Aucune RP pour le moment</p>
+        </li>
+
+        <li class="competence-item">
+            <h3>1.2 Exploiter des référentiels, normes et standards adoptés par le prestataire informatique</h3>
+            <p><a href="RP/NormeSQL" class="rp-link">Normes SQL</a><span class="desc"> - Les normes SQL à suivre</span></p>
+            <p><a href="RP/ConventionsNommage" class="rp-link">Conventions de nomages</a><span class="desc"> - Les différentes conventions de nommages dans les projets en C#</span></p>
+        </li>
+
+        <li class="competence-item">
+            <h3>1.3 Mettre en place et vérifier les niveaux d'habilitation associés à un service</h3>
+            <p><a href="RP/LCD_LDD_SQL" class="rp-link">LCD et LDD en SQL</a><span class="desc"> - Ces langages m'ont permis de gérer différents niveaux d'habilitation</span></p>
+        </li>
+
+        <li class="competence-item">
+            <h3>1.4 Vérifier les conditions de continuité d'un service informatique</h3>
+            <p class="empty">Aucune RP pour le moment</p>
+        </li>
+
+        <li class="competence-item">
+            <h3>1.5 Gérer les sauvegardes</h3>
+            <p><a href="RP/Powershell" class="rp-link">PowerShell</a><span class="desc"> - Scripts d'automatisation pour les sauvegardes</span></p>
+        </li>
+
+        <li class="competence-item">
+            <h3>1.6 Vérifier le respect des règles d'utilisation des ressources numériques</h3>
+            <p class="empty">Aucune RP pour le moment</p>
+        </li>
+    </ul>
+
+    <p class="retour-arriere">
+        <a href="/realPro/">⟸ Retour à mes réalisations professionnelles</a>
+    </p>
+</BaseLayout>
+
+<style>
+    h1 {
+        color: #a64dff;
+        border-bottom: 1px solid #a64dff;
+        padding-bottom: 10px;
+        font-size: 40px;
+    }
+
+    h2 {
+        color: #d9b3ff;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .intro {
+        color: white;
+        font-size: 15px;
+        margin: 20px;
+    }
+
+    .competences {
+        list-style: none;
+        padding: 10px;
+        margin: 30px;
+        margin-top: auto;
+    }
+
+    .competence-item {
+        border-left: 3px solid #a64dff;
+        padding: 20px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+    }
+
+    .competence-item:hover {
+        background: #262626;
+    }
+
+    .competence-item h3 {
+        color: #a64dff;
+        margin: 0 0 20px;
+        font-size: 18px;
+    }
+
+    .competence-item p {
+        color: #dfdfdf;
+        margin: 10px 25px;
+    }
+
+    .empty {
+        font-style: italic;
+    }
+
+    .rp-link {
+        color: #9bcdfe;
+        text-decoration: none;
+    }
+
+    .rp-link:hover {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .desc {
+        color: #858383;
+        font-size: 14px;
+    }
+
+    .retour-arriere {
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .retour-arriere a {
+        display: inline-block;
+        background: #262626;
+        color: #a64dff;
+        padding: 10px 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        border: 1px solid #a64dff;
+    }
+
+    .retour-arriere a:hover {
+        background: #a64dff;
+        color: #1a1a1a;
+    }
+</style>

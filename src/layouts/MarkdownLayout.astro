@@ -1,7 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import "../styles/markdown.css";
-const { frontmatter } = Astro.props;
+const {frontmatter} = Astro.props;
 ---
 
 <html lang="en">
@@ -10,12 +10,14 @@ const { frontmatter } = Astro.props;
     </head>
     <body>
         <h1>{frontmatter.titre}</h1>
-        <p class="date">{frontmatter.date}</p>
         <div class="markdown-content">
             <slot />
         </div>
         <p class="retour-arriere">
-            <a href="/realPro/">⟸ <span class="retour-arriere">Retour à mes réalisations professionnelles</span></a>
+            <a href="../listeTP">⟸ <span class="retour-arriere">Retour a la liste des RP</span></a>
+        </p>
+        <p class="retour-arriere">
+            <a href="/realPro/">⟸ <span class="retour-arriere">Retour à mon tableau de synthèse intégrés</span></a>
         </p>
         <Footer />
     </body>
@@ -42,11 +44,13 @@ const { frontmatter } = Astro.props;
         font-size: 25px;
         margin-bottom: 10px;
     }
+
     .retour-arriere a {
         color: #e6e6e6;
         text-decoration: none;
         font-size: 20px;
     }
+
     .retour-arriere a:hover {
         font-weight: bold;
         font-size: 25px;

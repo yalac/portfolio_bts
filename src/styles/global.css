@@ -36,12 +36,11 @@ h1 {
 /* Styles de la navigation */
 .nav-links {
     display: none;
-    width: 25%;
+    width: 15%;
     position: fixed;
     height: 100%;
     top: 0;
-    right: -25%;
-    padding-top: 60px;
+    padding-top: 50px;
     background-color: #262626;
 }
 

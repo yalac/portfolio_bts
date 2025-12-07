@@ -1,7 +1,8 @@
 ---
-import { Image } from "astro:assets";
+import {Image} from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import CertificationANSSI from "/public/imgs/Certif/CertificationANSSI.png";
+import CertificationPix from "/public/imgs/Certif/CertificationPixLvlA1.png";
 import CertificationRGPDm1 from "/public/imgs/Certif/CertificationRGPDm1.png";
 import CertificationRGPDm2 from "/public/imgs/Certif/CertificationRGPDm2.png";
 import CertificationRGPDm3 from "/public/imgs/Certif/CertificationRGPDm3.png";
@@ -33,7 +34,7 @@ import CertificationRGPDm5 from "/public/imgs/Certif/CertificationRGPDm5.png";
         </li>
         <li>
             <h3><a href="https://app.pix.fr/connexion" target="_blank">Pix</a></h3>
-            <p>(bientôt)</p>
+            <Image src={CertificationPix} alt="Certification Pix" height={480} width={640} />
         </li>
     </ul>
 </BaseLayout>
