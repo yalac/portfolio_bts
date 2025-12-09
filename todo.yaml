@@ -1,6 +1,7 @@
 // Obligatoire
 - Dans la page accueil et veille faire un bandeau en haut qui dissparait si tu descend et apparait si tu monte sur lequel il y a les sous partie
-- vérifier les liens de listeTP vers les TP car focntionne en déploiment mais pas en localhost
+- vérifier les liens de listeTP vers les TP car focntionne en déploiment mais pas en localhost // et de même pour le retour liste RP dans layout md
+- ajouter les RP de 2ème année
 
 // Facultatif
 - voir si possiblité de mettre une meilleur image pour ma tête
