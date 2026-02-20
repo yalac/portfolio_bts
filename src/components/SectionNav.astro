@@ -1,0 +1,95 @@
+---
+interface Props {
+    sections: { id: string; label: string }[];
+}
+
+const { sections } = Astro.props;
+---
+
+<nav class="section-nav" id="section-nav">
+    <ul class="section-list">
+        {sections.map((section) => (
+            <li>
+                <a href={`#${section.id}`} class="section-link">
+                    {section.label}
+                </a>
+            </li>
+        ))}
+    </ul>
+</nav>
+
+<script>
+    import { initSectionNav } from "../scripts/sectionNav.js";
+    initSectionNav();
+</script>
+
+<style>
+    .section-nav {
+        position: static;
+        background-color: transparent;
+        border-top: none;
+        border-bottom: none;
+        z-index: 20;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        overflow: hidden;
+    }
+
+    .section-nav.hidden {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    .section-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+
+    .section-link {
+        display: inline-block;
+        padding: 17px 14px;
+        color: #e6e6e6;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 0;
+        transition: all 0.2s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 3px solid transparent;
+    }
+
+    .section-link:hover {
+        background-color: rgba(166, 77, 255, 0.1);
+        border-bottom-color: #a64dff;
+        color: #a64dff;
+    }
+
+    .section-link.active {
+        background-color: rgba(166, 77, 255, 0.2);
+        border-bottom-color: #a64dff;
+        color: #a64dff;
+    }
+
+    @media (max-width: 1024px) {
+        .section-nav {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .section-list {
+            gap: 2px;
+            padding: 10px 0;
+        }
+
+        .section-link {
+            padding: 7px 10px;
+            font-size: 11px;
+        }
+    }
+</style>

@@ -2,26 +2,75 @@
 import { Image } from "astro:assets";
 import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
+import SectionNav from "./SectionNav.astro";
 import PhotoProfil from "/public/imgs/ImageProfil.jpg";
+
+interface Props {
+    sections?: { id: string; label: string }[];
+}
+
+const { sections } = Astro.props as Props;
 ---
 
-<header>
-    <nav>
-        <a href="/" class="profile-link">
-            <Image src={PhotoProfil} alt="Photo de profil" height={51} width={51} />
-            <span class="name">LACAILLE Yanis</span>
-        </a>
-        <Hamburger />
-        <Navigation />
+<header id="sticky-header">
+    <nav class="header-container">
+        <div class="header-left">
+            <a href="/" class="profile-link">
+                <Image src={PhotoProfil} alt="Photo de profil" height={51} width={51} />
+                <span class="name">LACAILLE Yanis</span>
+            </a>
+        </div>
+        <div class="header-center">
+            {sections && <SectionNav sections={sections} />}
+        </div>
+        <div class="header-right">
+            <Hamburger />
+            <Navigation />
+        </div>
     </nav>
 </header>
 
+<script>
+    import { initStickyHeader } from "../scripts/stickyHeader.js";
+    initStickyHeader();
+</script>
+
 <style>
-    nav {
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        background-color: #1a1a1a;
+        transition: transform 0.3s ease;
+    }
+
+    header.hidden {
+        transform: translateY(-100%);
+    }
+
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 5px;
+        gap: 10px;
+    }
+
+    .header-left {
+        flex-shrink: 0;
+    }
+
+    .header-center {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-right {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .profile-link {
@@ -41,5 +90,11 @@ import PhotoProfil from "/public/imgs/ImageProfil.jpg";
         font-weight: bold;
         font-style: italic;
         font-size: 20px;
+    }
+
+    @media (max-width: 1024px) {
+        .header-center {
+            display: none;
+        }
     }
 </style>

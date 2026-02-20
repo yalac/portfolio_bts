@@ -1,29 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const sections = [
+    { id: "profil", label: "Profil" },
+    { id: "formations", label: "Formations" },
+    { id: "exppro", label: "Expérience Pro" },
+    { id: "competences", label: "Compétences" },
+    { id: "langues", label: "Langues" },
+    { id: "certifications", label: "Certifications" },
+    { id: "loisirs", label: "Loisirs" },
+];
 ---
 
-<BaseLayout>
+<BaseLayout sections={sections}>
     <h1>Bienvenue dans mon Portfolio !</h1>
     <div class="container">
-        <div class="sommaire">
-            <h2>Sommaire</h2>
-            <ul>
-                <li><a href="#profil">Profil</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#exppro">Expérience Professionnelle</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#langues">Langues</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#loisirs">Loisirs</a></li>
-            </ul>
-        </div>
         <div class="content">
             <div class="section" id="profil">
                 <h2>Profil</h2>
                 <p>
-                    Je suis actuellement étudiant en BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métiers). Je suis quelqu’un d’organisé, de sérieux et de travailleur. Pour me contacter : voir <a
-                        href="/about"><u>ici</u></a
-                    >.
+                    Je suis actuellement un étudiant en BTS SIO 2ème année (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs. Pour me contacter :
+                    voir <a href="/about"><u>ici</u></a>.
                 </p>
             </div>
             <div class="section" id="formations">
@@ -48,76 +45,110 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             </div>
             <div class="section" id="exppro">
                 <h2>Expérience professionnelle</h2>
-                <p>Stage développeur Web <span class="commentaire">(Lycée Galilée 26 mai - 27 juin 2025)</span></p>
-                <p><span class="commentaire">Développement d'un site de gestion de stock</span></p>
+                <p>
+                    Stage chez Prakti.net <span class="commentaire"
+                        >(5 janvier 2026 - 20 février 2026 || 7 semaines)<br />
+                        Développement de la page d’accueil du site de l’entreprise avec Wordpress et plusieurs plugins comme Elementor qui m’ont permis d’améliorer mes connaissances et la pages</span
+                    >
+                </p>
+                <p>
+                    Stage développeur Web <span class="commentaire"
+                        >(Lycée Galilée 26 mai - 27 juin 2025 || 5 semaines)<br />
+                        Pendant ce stage j’ai développé un site Internet pour la gestion de stock de matériel de biotechnologie du lycée en php, html, et css</span
+                    >
+                </p>
             </div>
-            <div class="section" id="competences">
-                <h2>Compétences</h2>
-                <div class="competences-grid">
-                    <ul>
-                        <p><u>Programmation</u> :</p>
-                        <li>C# .NET</li>
-                        <li>Python</li>
-                        <li>Astro</li>
-                    </ul>
-                    <ul>
-                        <p><u>Sécurité</u> :</p>
-                        <li><a href="/certification">RGPD</a></li>
-                        <li><a href="/certification">ANSSI</a></li>
-                    </ul>
-                    <ul>
-                        <p><u>Web</u> :</p>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
-                    </ul>
-                    <ul>
-                        <p><u>SGBDR</u> :</p>
-                        <li>MySQL (phpMyAdmin)</li>
-                        <li>SQL Server (SQL Server Management Studio)</li>
-                        <li>SQL Server (langage Transact-SQL)</li>
-                    </ul>
-                    <ul>
-                        <p><u>Framework</u> :</p>
-                        <li>Symfony</li>
-                        <li>Dot Net</li>
-                    </ul>
-                    <ul>
-                        <p><u>Méthode d'analyse</u> :</p>
-                        <li>Merises</li>
-                        <li>Cycle en V</li>
-                        <li>Agile</li>
-                        <li>UML</li>
-                    </ul>
-                    <ul>
-                        <p><u>Veille</u> :</p>
-                        <li>Thème - Astronomie</li>
-                        <li>Outils - Feedly, Old Reader, Google Alert, Flipboard</li>
-                    </ul>
-                </div>
+        </div>
+        <div class="section" id="competences">
+            <h2>Compétences</h2>
+            <div class="competences-grid">
+                <ul>
+                    <p><u>Programmation</u> :</p>
+                    <li>C# .NET<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Python<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Astro<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Javascript<span style="color: gold; font-size: 20px;">★★☆☆☆</span></li>
+                </ul>
+                <ul>
+                    <p><u>Sécurité</u> :</p>
+                    <li><a href="/certification">RGPD (certification)</a></li>
+                    <li><a href="/certification">ANSSI (certification)</a></li>
+                </ul>
+                <ul>
+                    <p><u>Web</u> :</p>
+                    <li>HTML<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>CSS<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>PHP<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                </ul>
+                <ul>
+                    <p><u>SGBDR</u> :</p>
+                    <li>MySQL (phpMyAdmin)<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>SQL Server (SQL Server Management Studio)<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>SQL Server (langage Transact-SQL)<span style="color: gold; font-size: 20px;">★★☆☆☆</span></li>
+                </ul>
+                <ul>
+                    <p><u>Framework</u> :</p>
+                    <li>Symfony<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Dot Net<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                </ul>
+                <ul>
+                    <p><u>Méthode d'analyse</u> :</p>
+                    <li>Merises<span style="color: gold; font-size: 20px;">★★☆☆☆</span></li>
+                    <li>Cycle en V<span style="color: gold; font-size: 20px;">★★☆☆☆</span></li>
+                    <li>Agile<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                </ul>
+                <ul>
+                    <p><u>Logiciel</u> :</p>
+                    <li>Suite office<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Rider<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Visual studio code (VSC)<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>VMWare<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Virtual Box<span style="color: gold; font-size: 20px;">★★☆☆☆</span></li>
+                    <li>Wamp Server<span style="color: gold; font-size: 20px;">★★★☆☆</span></li>
+                    <li>Unity<span style="color: gold; font-size: 20px;">★★☆☆☆</span></li>
+                </ul>
+                <ul>
+                    <p><u>Veille</u> :</p>
+                    <li>Thème - Astronomie et informatique</li>
+                    <li>Outils - Feedly, Old Reader, Google Alert, Flipboard, Inoreader, NewsBlur</li>
+                </ul>
             </div>
-            <div class="section" id="langues">
-                <h2>Langues</h2>
-                <p>Anglais niveau B2</p>
-                <p>Allemand niveau A2</p>
+        </div>
+        <div class="section" id="langues">
+            <h2>Langues</h2>
+            <p>France (langue maternelle)</p>
+            <p>Anglais niveau B2</p>
+            <p>Allemand niveau A2</p>
+            <!--
+            <p>Estonien (quelque mot)</p>
+            <p>Japonais niveau A1</p>
+            -->
+        </div>
+        <div class="section certifications-loisirs">
+            <div class="certifications" id="certifications">
+                <h2>Certifications et formations</h2>
+                <p>J'ai suivi plusieurs formations et obtenu plusieurs certifications :</p>
+                <ul>
+                    <li><a href="/certification">Atelier RGPD</a></li>
+                    <li><a href="/certification">MOOC de l'ANSSI</a></li>
+                    <li><a href="/certification">Pix</a></li>
+                    <li>Formation <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">HTML&CSS V8</a> sur FreeCodeCamp (les 3 premiers cours)</li>
+                    <li>Formation <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank">JavaScript&Data V8</a> sur FreeCodeCamp (jusqu'à la 1ère certification)</li>
+                    <span class="commentaire"><li>Formations C (en cours) sur Codecademy</li></span>
+                    <span class="commentaire"><li>Formations C++ (prévu) sur Codecademy</li></span>
+                    <span class="commentaire"><li>Formations TypeScript (prévu) sur Codecademy</li></span>
+                    <span class="commentaire"><li>Formations Responsive Web Design certification (prévu) sur FreeCodeCamp</li></span>
+                    <span class="commentaire"><li>Formations JavaScript certification (prévu) sur FreeCodeCamp</li></span>
+                </ul>
             </div>
-            <div class="section certifications-loisirs">
-                <div class="certifications" id="certifications">
-                    <h2>Certifications</h2>
-                    <p>J'ai suivi plusieurs formations et obtenu plusieurs certifications :</p>
-                    <ul>
-                        <li><a href="/certification">Atelier RGPD</a></li>
-                        <li><a href="/certification">MOOC de l'ANSSI</a></li>
-                        <li><a href="/certification">Pix</a></li>
-                    </ul>
-                </div>
-                <div class="loisirs" id="loisirs">
-                    <h2>Loisirs</h2>
-                    <p>
-                        Je fais partie d’un club de badminton, où je prends plaisir à pratiquer ce sport et à m’impliquer dans différentes activités. Le sport occupe une place importante dans ma vie, tout comme la programmation, que j’apprécie
-                        approfondir et explorer chez moi.
-                    </p>
-                </div>
+            <div class="loisirs" id="loisirs">
+                <h2>Loisirs</h2>
+                <p>
+                    Je fais partie d’un club de badminton dans la vallée de l'Andelle, où je prends plaisir à pratiquer ce sport et à m’impliquer dans différentes activités comme l'animation de séance de temps en temps, participation à des tournois
+                    ou à des événements spécifiquement organisé comme pour le téléthon, etc. Le sport occupe une place importante dans ma vie. La programmation occupe aussi une place importante sachant que je fait des formations, j'apprend par
+                    exemple Unity pour le développement de jeux vidéo, mais je développe aussi des projets personnels comme un site de gestion d'inventaire pour chez moi. De plus j'essaie d'approfondir plusieurs domaines de développement. Je suis
+                    aussi passionné par l'astronomie, j'aime regarder les étoiles apprendre des noms d'étoiles et voir comment cela évolue
+                </p>
             </div>
         </div>
     </div>
@@ -142,29 +173,6 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     .container {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .sommaire {
-        width: 15%;
-        padding: 10px;
-        background-color: #262626;
-        border-radius: 5px;
-        margin: 10px;
-        height: fit-content;
-    }
-
-    .sommaire ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    .sommaire ul li {
-        margin: 10px;
-    }
-
-    .sommaire ul li a {
-        color: #a64dff;
-        text-decoration: none;
     }
 
     .content {

@@ -1,15 +1,44 @@
 // Obligatoire
-- Dans la page accueil et veille faire un bandeau en haut qui dissparait si tu descend et apparait si tu monte sur lequel il y a les sous partie
-- vérifier les liens de listeTP vers les TP car focntionne en déploiment mais pas en localhost // et de même pour le retour liste RP dans layout md
-- ajouter les RP de 2ème année
+-> Veille
+- Veille -> changer les bornages et news ou plus se concentrer sur l'informatique que l'astronomie (côté réseaux possibles)
+- Trier news par bornage et pas par date (ou fait un systeme de triage par nom, date, bornage, ...)
+- Écrire synthèse news
 
-// Facultatif
-- voir si possiblité de mettre une meilleur image pour ma tête
-- voir si possiblité de guider vers le mot précis du vocabulaire et pas seulement la page global
+-> RP
+- Ajouter RP et stage de 2ème année
+- Faire les compétences des tp et pas les tp des compétences
+- Mettre déployer un service -> pour 1.5.1
+- Ne pas afficher les compétence que l'on ne posssède pas
+- Approfondir contexte et environnement technologique des RP
+- Améliorer les preuves (ex -> portfolio mettre du code et extrait du site)
+
+-> Navigation
+- Vérifier les liens de listeTP vers les TP car fonctionne en déploiment mais pas en localhost // de même pour le retour liste RP dans layout md
+- Voir pour guider vers le mot précis du vocabulaire et pas seulement la page global lexique
+
+-> Lexique
+- Vérifier que les définitions sont simple, compréhensible et qui si certain mots sont compliqué alors ils sont eux aussi définit
+- Ajouter un système de trie pour les mots (croissant, décroissant, plus grand, plus petit, par sources)
+
+-> Style
+- Changer le style pour page accueil, veille, rectorat, page RP pour certaines partie, lexique, mentions légales, certifications
+- Mettre des îcones dans rectorat et RP pour le tableau excel, et pour les pdf dans la veille
+- Changer la mise en page de rectorat pour faire sous forme d'accordion le e5 et e6
+- Page accueil, partie certification et formations à coupé en 2 colonne -- 1 formations  1 certifications
+- Voir pour mettre une meilleur image pour ma tête
+- Mettre des emojis
+- Voir si dans les pages markdown des RP, les compétences peuvent pas être mieux intégré ainsi que les preuves pour faire plus jolie
+- Rendre le hamburger plus smooth, et un peu plus grand, avec si possible menu accordion pour les pages avec plusieurs sous-parties
+
+-> Arborescence
+- Mieux organiser les fichiers et dossiers dans public
+- Mieux organiser les fichiers et dossiers dans src>pages
+- Regarder s'il faut d'autre pages de style dans src>styles pour mieux organiser
+
 
 
 // Vérification
-- vérifier tout les liens et les images
-- pauffinage et vérification de l'ortograpahe, des titres ...
-- tout les mots compliqué dans les vieilles sont bien relié vers la page de vocabulaire
-- vérifier la compléxité des résumés de certaines news
+- Vérifier que tout les liens fonctionne correctement et que les images s'affichent toutes
+- Vérifier la compléxité des résumés de certaines news
+- Vérifier que tout les mots compliqué dans les vieilles sont bien relié vers la page lexique
+- Pauffinage et vérification de l'ortograpahe, grammaires, titres ...

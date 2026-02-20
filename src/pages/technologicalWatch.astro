@@ -1,17 +1,26 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const sections = [
+    { id: "presentation", label: "Présentation" },
+    { id: "liste-outils", label: "Outils de veille" },
+    { id: "descriptions-outils", label: "Description des outils" },
+    { id: "mise-en-application", label: "Mise en application" },
+    { id: "bornage", label: "Bornage" },
+    { id: "mes-news", label: "Mes news" },
+];
 ---
 
-<BaseLayout>
+<BaseLayout sections={sections}>
     <h1>Ma veille technologique</h1>
-    <section class="section" style="text-align: center">
+    <section class="section" id="presentation" style="text-align: center">
         <h2>Présentation de ma veille</h2>
         <p>
             Mon thème est <b>l'Astronomie et l'informatique</b>. Je vais ici vous montrer et expliquer plusieurs nouveautés qui apparaissent chaque mois en rapport avec l'informatique dans l'astronomie.
         </p>
     </section>
 
-    <section class="section">
+    <section class="section" id="liste-outils">
         <h2>Mes outils de veille</h2>
         <p>J'utilise différents outils de veille tels que :</p>
         <ul class="list">
@@ -22,7 +31,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </ul>
     </section>
 
-    <section class="section">
+    <section class="section" id="descriptions-outils">
         <h3>Descriptions de mes outils</h3>
         <article class="tool">
             <h4><a href="http://feedly.com/news-reader" target="_blank">Feedly</a></h4>
@@ -55,9 +64,25 @@ import BaseLayout from "../layouts/BaseLayout.astro";
             <p><u>Points négatifs :</u> Trop de publicités et limitations des sources.</p>
             <p><u>REX :</u> Bon outil mais les publicités sont un inconvénient majeur.</p>
         </article>
+
+        <article class="tool">
+            <h4><a href="https://www.inoreader.com/all_articles" target="_blank">Inoreader</a></h4>
+            <p><u>Description :</u> Inoreader est un outil que j'ai utilisé avec les mots-clés : NASA, astronomy, space, phys.org, new scientist - space.</p>
+            <p><u>Points positifs :</u> Personnalisation, interface visuelle attrayante, facile de prise en main.</p>
+            <p><u>Points négatifs :</u> Limitation à 150 flux en gratuit, existe un mode payant pour les fonctionnalité plus avancé.</p>
+            <p><u>REX :</u> Bon outil, pratique pour une veille personnalisée, avec un bon interface et facile d'utilisation.</p>
+        </article>
+
+        <article class="tool">
+            <h4><a href="https://www.inoreader.com/all_articles" target="_blank">NewsBlur</a></h4>
+            <p><u>Description :</u> NewsBlur est un outil que j'ai testé avec les mots-clés : NASA, astronomy, space.</p>
+            <p><u>Points positifs :</u> Entrainement par IA, et open-source</p>
+            <p><u>Points négatifs :</u> Interface vieille et peu intituive, très limité, vitesse un peu lente des fois.</p>
+            <p><u>REX :</u> Pas terrible pour moi, l'IA aide un peu mais l'interface un peu brute et pas attirante ne rend pas l'expérience très sympathique.</p>
+        </article>
     </section>
 
-    <section class="section">
+    <section class="section" id="mise-en-application">
         <h2>Ma mise en application</h2>
         <p>J'ai réfléchi à deux idées pour mettre en application cette veille :</p>
         <ul class="list">
@@ -66,7 +91,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </ul>
     </section>
 
-    <section class="section bornage">
+    <section class="section bornage" id="bornage">
         <h2>Mon bornage</h2>
         <h3>1. Traitement et analyse des données</h3>
         <p>Cela inclut : les données astronomiques, leur traitement, les outils informatiques comme Celestia, ainsi que l'Intelligence Artificielle (IA) qui nous aide.</p>
@@ -77,7 +102,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </p>
     </section>
 
-    <div class="news-container">
+    <div class="news-container" id="mes-news">
         <h2>Mes News</h2>
         <!-- Février -->
         <div class="month-section">
@@ -362,8 +387,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     <p>
                         Le <a href="/vocabulary/">sismomètre d'InSight</a> (<a href="/vocabulary/">NASA</a>) a détecté des <a href="/vocabulary/">grumeaux rocheux géants</a> (jusqu'à 4 km) dans le <a href="/vocabulary/">manteau martien</a>, vestiges
                         d'impacts colossaux il y a 4,5 milliards d'années. Ces débris, préservés grâce à l'absence de <a href="/vocabulary/">tectonique des plaques</a>, offrent un enregistrement unique de la formation précoce de Mars, contrastant
-                        avec la Terre où ces traces ont été effacées. Les <a href="/vocabulary/">simulations</a> informatiques et l'analyse des 1 319 séismes enregistrés ont permis de cartographier ces anomalies, révélant un intérieur planétaire figé
-                        dans le temps. Une avancée clé pour comprendre les planètes sans activité tectonique, comme Vénus ou Mercure.
+                        avec la Terre où ces traces ont été effacées. Les <a href="/vocabulary/">simulations</a> informatiques et l'analyse des 1 319 séismes enregistrés ont permis de cartographier ces anomalies, révélant un intérieur planétaire figé dans
+                        le temps. Une avancée clé pour comprendre les planètes sans activité tectonique, comme Vénus ou Mercure.
                     </p>
                 </article>
             </div>
@@ -425,8 +450,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
                     <p>
                         Une équipe de chercheurs a démontré que le modèle d'IA Gemini de Google peut identifier des <a href="/vocabulary/">événements célestes</a> (comme des <a href="/vocabulary/">supernovas</a> ou des <a href="/vocabulary/"
                             >trous noirs</a
-                        > dévorant des étoiles) avec une précision dépassant 90 %, après avoir été entraîné sur seulement 15 exemples. Cette avancée pourrait révolutionner l'astronomie en réduisant le temps et les ressources nécessaires pour analyser
-                        les <a href="/vocabulary/">données du ciel nocturne</a>. L'étude souligne le potentiel des grands modèles de langage pour démocratiser la recherche scientifique, même pour des non-experts.
+                        > dévorant des étoiles) avec une précision dépassant 90 %, après avoir été entraîné sur seulement 15 exemples. Cette avancée pourrait révolutionner l'astronomie en réduisant le temps et les ressources nécessaires pour analyser les
+                        <a href="/vocabulary/">données du ciel nocturne</a>. L'étude souligne le potentiel des grands modèles de langage pour démocratiser la recherche scientifique, même pour des non-experts.
                     </p>
                 </article>
 

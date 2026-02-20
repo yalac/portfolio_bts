@@ -1,13 +1,18 @@
 ---
 import { Image } from "astro:assets";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import ImageAttestation1 from "/public/imgs/attestationStageSigne.png";
-import ImageBidon2 from "/public/imgs/imageBidon2.png";
+import ImageAttestation1 from "/public/imgs/attestationStagePremiere.png";
+import ImageAttestation2 from "/public/imgs/attestationStageDeuxieme.png";
+
+const sections = [
+    { id: "epreuve-e5", label: "Épreuve E5" },
+    { id: "epreuve-e6", label: "Épreuve E6" },
+];
 ---
 
-<BaseLayout>
+<BaseLayout sections={sections}>
     <h1>Résumé de mes compétences</h1>
-    <h2>Épreuve E5</h2>
+    <h2 id="epreuve-e5">Épreuve E5</h2>
     <h3>Voici mon tableau de synthèse joint <a href="/YLA_TableauDeSynthese.xlsx" target="_blank">ici</a></h3>
     <h3>Attestation de stage</h3>
     <ul class="skills-list">
@@ -16,7 +21,7 @@ import ImageBidon2 from "/public/imgs/imageBidon2.png";
                 <div class="img">
                     1<sup>ère</sup> année de BTS SIO option SLAM
                     <div>
-                        <a href="/public/imgs/attestationStageSigne.png" target="_blank" title="Attestation stage 1ère année">
+                        <a href="/public/imgs/attestationStagePremiere.png" target="_blank" title="Attestation stage 1ère année">
                             <Image src={ImageAttestation1} alt="Attestation de stage 1ère année" height={480} width={360} />
                         </a>
                     </div>
@@ -24,14 +29,16 @@ import ImageBidon2 from "/public/imgs/imageBidon2.png";
                 <div class="img">
                     2<sup>nde</sup> année de BTS SIO option SLAM
                     <div>
-                        <Image src={ImageBidon2} alt="Attestation de stage 2nde année" height={480} width={360} />
+                        <a href="/public/imgs/attestationStageDeuxieme.png" target="_blank" title="Attestation stage 2nde année">
+                            <Image src={ImageAttestation2} alt="Attestation de stage 2nde année" height={480} width={360} />
+                        </a>
                     </div>
                 </div>
             </div>
         </li>
     </ul>
 
-    <h2>Épreuve E6</h2>
+    <h2 id="epreuve-e6">Épreuve E6</h2>
 </BaseLayout>
 
 <style>
