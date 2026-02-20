@@ -36,11 +36,27 @@ const rps = [
         ]
     },
     {
+        titre: "Pare-feu",
+        url: "/portfolio/RPCours/Firewall",
+        description: "Sécurité des réseaux et filtrage du trafic",
+        competences: [
+            { num: "1.6", titre: "Vérifier le respect des règles d'utilisation des ressources numériques" }
+        ]
+    },
+    {
         titre: "GLPI (gestion d'incidents)",
         url: "/portfolio/RPCours/GLPI",
         description: "J'ai pu apprendre à traiter des demandes",
         competences: [
-            { num: "2.2", titre: "Traiter les demandes concernant les services réseau et système, applicatifs" }
+            { num: "2.2", titre: "Traiter des demandes concernant les services réseau et système, applicatifs" }
+        ]
+    },
+    {
+        titre: "Injection SQL",
+        url: "/portfolio/RPCours/InjectionSQL",
+        description: "Sécurité des bases de données et prévention des injections SQL",
+        competences: [
+            { num: "1.6", titre: "Vérifier le respect des règles d'utilisation des ressources numériques" }
         ]
     },
     {
@@ -52,11 +68,51 @@ const rps = [
         ]
     },
     {
+        titre: "MAUI",
+        url: "/portfolio/RPCours/MAUI",
+        description: "Framework de développement d'applications mobiles multi-plateformes",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+        ]
+    },
+    {
+        titre: "MAUI - Data Binding et MVVM",
+        url: "/portfolio/RPCours/MAUIBindingMVVM",
+        description: "Liaison de données et pattern architectural MVVM en MAUI",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+        ]
+    },
+    {
+        titre: "MAUI - SQLite et Persistence",
+        url: "/portfolio/RPCours/MAUISQLite",
+        description: "Stockage local et persistence de données avec SQLite",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+        ]
+    },
+    {
+        titre: "Méthode MERISE",
+        url: "/portfolio/RPCours/MERISE",
+        description: "Conception et adaptation de bases de données",
+        competences: [
+            { num: "4.1", titre: "Analyser les objectifs et les modalités d'organisation d'un projet" }
+        ]
+    },
+    {
         titre: "Normes SQL",
         url: "/portfolio/RPCours/NormeSQL",
         description: "Les normes SQL à suivre",
         competences: [
             { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" }
+        ]
+    },
+    {
+        titre: "PDO",
+        url: "/portfolio/RPCours/PDO",
+        description: "Gérer les connexions aux bases de données de manière sécurisée",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
         ]
     },
     {
@@ -84,13 +140,37 @@ const rps = [
         ]
     },
     {
+        titre: "RAID",
+        url: "/portfolio/RPCours/RAID",
+        description: "Redondance et disponibilité des données",
+        competences: [
+            { num: "1.5", titre: "Gérer les sauvegardes" }
+        ]
+    },
+    {
+        titre: "Application RadarTuture",
+        url: "/portfolio/RPCours/RadarTuture",
+        description: "Développement d'une application mobile complète avec MAUI",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+        ]
+    },
+    {
         titre: "Les réseaux sociaux (LinkedIn)",
         url: "/portfolio/RPCours/ReseauxSociaux",
         description: "Gestion de mon identité numérique et valorisation de mon image",
         competences: [
-            { num: "3.1", titre: "Participer à la valorisation de l'image de l'organisation sur les médias numériques" },
+            { num: "3.1", titre: "Participer à la valorisation de l'image de l'organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques" },
             { num: "6.3", titre: "Gérer son identité professionnelle" },
             { num: "6.4", titre: "Développer son projet professionnel" }
+        ]
+    },
+    {
+        titre: "SAN/NAS et TrueNAS",
+        url: "/portfolio/RPCours/SANNASTX",
+        description: "Stockage en réseau et solutions de sauvegarde centralisées",
+        competences: [
+            { num: "1.5", titre: "Gérer les sauvegardes" }
         ]
     },
     {
@@ -113,6 +193,22 @@ const rps = [
         ]
     },
     {
+        titre: "Framework Symfony",
+        url: "/portfolio/RPCours/Symfony",
+        description: "Développer des sites web exploitant les données avec un framework PHP",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+        ]
+    },
+    {
+        titre: "Transact-SQL",
+        url: "/portfolio/RPCours/TransactSQL",
+        description: "Procédures stockées et triggers pour administrer les bases de données",
+        competences: [
+            { num: "1.3", titre: "Mettre en place et vérifier les niveaux d'habilitation associés à un service" }
+        ]
+    },
+    {
         titre: "Veille technologique",
         url: "/portfolio/RPCours/VeilleTechnologique",
         description: "Mise en place d'une veille qui s'appuie sur des outils et stratégies",
@@ -131,8 +227,29 @@ const rpsPro = [
         description: "Développement d'un site web de gestion de stock pour le laboratoire de biotechnologie du Lycée Galilée",
         competences: [
             { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" },
-            { num: "3.2", titre: "Concevoir ou adapter une base de données" },
             { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" },
+            { num: "4.1", titre: "Analyser les objectifs et les modalités d'organisation d'un projet" },
+            { num: "4.2", titre: "Planifier les activités" },
+            { num: "5.2", titre: "Déployer un service" }
+        ]
+    },
+    {
+        titre: "Réalisation d'un site internet avec WordPress",
+        url: "/portfolio/RPPro/tpPro-2",
+        description: "Réalisation d'un site internet avec WordPress",
+        competences: [
+            { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" },
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" },
+            { num: "4.2", titre: "Planifier les activités" },
+            { num: "5.2", titre: "Déployer un service" }
+        ]
+    },
+    {
+        titre: "Réalisation d'une application mobile via C# MAUI",
+        url: "/portfolio/RPPro/tpPro-3",
+        description: "Réalisation d'une application mobile via C# MAUI",
+        competences: [
+            { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" },
             { num: "4.2", titre: "Planifier les activités" },
             { num: "5.2", titre: "Déployer un service" }
         ]

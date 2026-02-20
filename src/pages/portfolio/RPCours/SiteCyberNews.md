@@ -10,10 +10,11 @@ Dans le cadre de mon **_BTS SIO_** au Campus la Châtaigneraie, nous avons dû r
 
 ## Compétences concernées
 
-La compétence concernée est
+Les compétences concernées sont
 
 [Développer la présence en ligne de l'organisation](/portfolio/realPro/)\
-<span style="color: #858383">_Participer à l'évolution d'un site Web exploitant les données de l'organisation_</span>
+<span style="color: #858383">_Participer à l'évolution d'un site Web exploitant les données de l'organisation_</span>\
+<span style="color: #858383">_Mettre en œuvre des outils et stratégies de veille informationnelle_</span>
 
 ## Environnement technologique
 

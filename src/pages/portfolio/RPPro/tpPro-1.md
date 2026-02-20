@@ -64,8 +64,8 @@ Chaque fonctionnalité a été développée en concertation et validée par le m
 Les compétences concernées sont
 
 [Gérer le patrimoine informatique](/portfolio/realPro/) (1.2)\
-[Développer la présence en ligne de l’organisation](/portfolio/realPro/) (3.2 et 3.3)\
-[Travailler en mode projet](/portfolio/realPro/) (4.2)\
+[Développer la présence en ligne de l'organisation](/portfolio/realPro/) (3.3)\
+[Gérer les projets informatiques](/portfolio/realPro/) (4.1 et 4.2)\
 [Mettre à disposition des utilisateurs un service informatique](/portfolio/realPro/) (5.2)
 
 ## Preuves
