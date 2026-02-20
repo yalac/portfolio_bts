@@ -23,4 +23,4 @@ Pour déployer un site, j'ai appris à utiliser l'hébergeur AwardSpace.
 ## Preuves
 
 _L'hébergeur AwardSpace_\
-![AwardSpace](/imgs/PreuveRP/hebergeurAwardSpace.png)
+![AwardSpace](/images/preuves/rp/hebergeurAwardSpace.png)

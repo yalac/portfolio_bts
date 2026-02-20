@@ -22,6 +22,6 @@ Pour cette réalisation, j'ai utilisé MySQL via WAMP ainsi que PhpMyAdmin.
 ## Preuves
 
 _Mysql_\
-![Mysql](/imgs/PreuveRP/Mysql.png)
+![Mysql](/images/preuves/rp/Mysql.png)
 _Exemple des requêtes qui permet de gérer les utilisateurs_\
-![Requete gérant l'utilisateur](/imgs/PreuveRP/RequeteLCDLDD.png)
+![Requete gérant l'utilisateur](/images/preuves/rp/RequeteLCDLDD.png)

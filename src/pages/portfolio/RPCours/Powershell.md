@@ -22,6 +22,6 @@ Pour cette réalisation, j'ai utilisé MySQL via WAMP ainsi que PhpMyAdmin.
 ## Preuves
 
 _Windows Powershell ISE_\
-![Powershell ISE](/imgs/PreuveRP/PowershellISE.png)
+![Powershell ISE](/images/preuves/rp/PowershellISE.png)
 _Exemple d'un script de sauvegarde en powershell_\
-![Script sauvegarde](/imgs/PreuveRP/PowershellSauvegarde.png)
+![Script sauvegarde](/images/preuves/rp/PowershellSauvegarde.png)

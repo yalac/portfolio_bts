@@ -71,15 +71,15 @@ Les compétences concernées sont
 ## Preuves
 
 _Le site que j'ai créé_\
-![Site](../../../public/images/preuves/stage/siteCree.png)
+![Site](/images/preuves/stage/siteCree.png)
 _MDN Web Docs_
-![MDN Web Docs](../../../public/images/preuves/stage/mdnWebDocs.png)\
+![MDN Web Docs](/images/preuves/stage/mdnWebDocs.png)\
 _Plusieurs exemples du code utilisé_\
-![Exemple de code HTML](../../../public/images/preuves/stage/codeStageHTML.png)
-![Exemple de code CSS](../../../public/images/preuves/stage/codeStageCSS.png)
-![Exemple de code PHP](../../../public/images/preuves/stage/codeStagePHP.png)\
+![Exemple de code HTML](/images/preuves/stage/codeStageHTML.png)
+![Exemple de code CSS](/images/preuves/stage/codeStageCSS.png)
+![Exemple de code PHP](/images/preuves/stage/codeStagePHP.png)\
 _Deux exemples du code JSON utilisé_\
-![Exemple de code JSON nom](../../../public/images/preuves/stage/codeStageJSONname.png)\
-![Exemple de code JSON materiaux](../../../public/images/preuves/stage/codeStageJSONmateriel.png)\
+![Exemple de code JSON nom](/images/preuves/stage/codeStageJSONname.png)\
+![Exemple de code JSON materiaux](/images/preuves/stage/codeStageJSONmateriel.png)\
 _Schéma réalisé avec Paint_\
-![Exemple de paint](../../../public/images/preuves/stage/schemaPaint.png)
+![Exemple de paint](/images/preuves/stage/schemaPaint.png)
