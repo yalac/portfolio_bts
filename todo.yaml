@@ -6,14 +6,10 @@
 
 -> RP
 - Ajouter RP et stage de 2ème année
-- Faire les compétences des tp et pas les tp des compétences
-- Mettre déployer un service -> pour 1.5.1
-- Ne pas afficher les compétence que l'on ne posssède pas
 - Approfondir contexte et environnement technologique des RP
 - Améliorer les preuves (ex -> portfolio mettre du code et extrait du site)
 
 -> Navigation
-- Vérifier les liens de listeTP vers les TP car fonctionne en déploiment mais pas en localhost // de même pour le retour liste RP dans layout md
 - Voir pour guider vers le mot précis du vocabulaire et pas seulement la page global lexique
 
 -> Lexique
@@ -31,9 +27,9 @@
 - Rendre le hamburger plus smooth, et un peu plus grand, avec si possible menu accordion pour les pages avec plusieurs sous-parties
 
 -> Arborescence
-- Mieux organiser les fichiers et dossiers dans public
-- Mieux organiser les fichiers et dossiers dans src>pages
 - Regarder s'il faut d'autre pages de style dans src>styles pour mieux organiser
+
+
 
 
 

@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Hamburger from "./Hamburger.astro";
 import Navigation from "./Navigation.astro";
 import SectionNav from "./SectionNav.astro";
-import PhotoProfil from "/public/imgs/ImageProfil.jpg";
+import PhotoProfil from "/public/images/profile/ImageProfil.jpg";
 
 interface Props {
     sections?: { id: string; label: string }[];
@@ -49,25 +49,29 @@ const { sections } = Astro.props as Props;
     }
 
     .header-container {
+        position: relative;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding: 5px;
-        gap: 10px;
+        min-height: 60px;
     }
 
     .header-left {
-        flex-shrink: 0;
+        position: absolute;
+        left: 5px;
+        z-index: 1;
     }
 
     .header-center {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+        max-width: 100%;
+        z-index: 0;
     }
 
     .header-right {
-        flex-shrink: 0;
+        position: absolute;
+        right: 5px;
+        z-index: 1;
         display: flex;
         align-items: center;
         gap: 10px;

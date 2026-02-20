@@ -1,5 +1,7 @@
 # Astro Starter Kit: Basics
 
+Il s'agit la de mon portfolio crée à partir de Astro, un nouveau langage que j'apprend et que je trouve pratique
+
 ```sh
 pnpm create astro@latest -- --template basics
 ```

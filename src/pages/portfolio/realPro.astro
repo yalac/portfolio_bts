@@ -1,0 +1,314 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+// Sections pour la navigation
+const sections = [
+    { id: "rp-cours", label: "RP Cours" },
+    { id: "rp-pro", label: "RP Pro" }
+];
+
+// Structure des RP cours avec leurs compétences
+const rps = [
+    {
+        titre: "Conventions de nommages",
+        url: "/portfolio/RPCours/ConventionsNommage",
+        description: "Les différentes conventions de nommages dans les projets en C#",
+        competences: [
+            { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" }
+        ]
+    },
+    {
+        titre: "Déployer un service",
+        url: "/portfolio/RPCours/DeployerService",
+        description: "Déploiement et mise en production de services",
+        competences: [
+            { num: "5.1", titre: "Réaliser les tests d’intégration et d’acceptation d’un service" },
+            { num: "5.2", titre: "Déployer un service" }
+        ]
+    },
+    {
+        titre: "Formation PCC",
+        url: "/portfolio/RPCours/FormationPCC",
+        description: "Temps libre pour effectuer des certifications et apprendre des langages",
+        competences: [
+            { num: "6.1", titre: "Mettre en place son environnement d'apprentissage personnel" },
+            { num: "6.4", titre: "Développer son projet professionnel" }
+        ]
+    },
+    {
+        titre: "GLPI (gestion d'incidents)",
+        url: "/portfolio/RPCours/GLPI",
+        description: "J'ai pu apprendre à traiter des demandes",
+        competences: [
+            { num: "2.2", titre: "Traiter les demandes concernant les services réseau et système, applicatifs" }
+        ]
+    },
+    {
+        titre: "LCD et LDD en SQL",
+        url: "/portfolio/RPCours/LCD_LDD_SQL",
+        description: "Ces langages m'ont permis de gérer différents niveaux d'habilitation",
+        competences: [
+            { num: "1.3", titre: "Mettre en place et vérifier les niveaux d'habilitation associés à un service" }
+        ]
+    },
+    {
+        titre: "Normes SQL",
+        url: "/portfolio/RPCours/NormeSQL",
+        description: "Les normes SQL à suivre",
+        competences: [
+            { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" }
+        ]
+    },
+    {
+        titre: "PHP",
+        url: "/portfolio/RPCours/PHP",
+        description: "J'ai appris à exploiter des données d'un site via PHP",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" }
+        ]
+    },
+    {
+        titre: "Portfolio et CV",
+        url: "/portfolio/RPCours/PortfolioCV",
+        description: "Présentation de mon parcours et de mon CV et donc de mon identité",
+        competences: [
+            { num: "6.3", titre: "Gérer son identité professionnelle" }
+        ]
+    },
+    {
+        titre: "PowerShell",
+        url: "/portfolio/RPCours/Powershell",
+        description: "Scripts d'automatisation pour les sauvegardes",
+        competences: [
+            { num: "1.5", titre: "Gérer les sauvegardes" }
+        ]
+    },
+    {
+        titre: "Les réseaux sociaux (LinkedIn)",
+        url: "/portfolio/RPCours/ReseauxSociaux",
+        description: "Gestion de mon identité numérique et valorisation de mon image",
+        competences: [
+            { num: "3.1", titre: "Participer à la valorisation de l'image de l'organisation sur les médias numériques" },
+            { num: "6.3", titre: "Gérer son identité professionnelle" },
+            { num: "6.4", titre: "Développer son projet professionnel" }
+        ]
+    },
+    {
+        titre: "Site CyberNews",
+        url: "/portfolio/RPCours/SiteCyberNews",
+        description: "J'ai créé un site qui exploite des données et fait appel à des outils de veille",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" },
+            { num: "6.2", titre: "Mettre en œuvre des outils et stratégies de veille informationnelle" }
+        ]
+    },
+    {
+        titre: "Site Web Équipe",
+        url: "/portfolio/RPCours/SiteWebEquipe",
+        description: "J'ai participé à la création d'un site exploitant des données en mode projet",
+        competences: [
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" },
+            { num: "4.2", titre: "Planifier les activités" },
+            { num: "4.3", titre: "Évaluer les indicateurs de suivi d'un projet et analyser les écarts" }
+        ]
+    },
+    {
+        titre: "Veille technologique",
+        url: "/portfolio/RPCours/VeilleTechnologique",
+        description: "Mise en place d'une veille qui s'appuie sur des outils et stratégies",
+        competences: [
+            { num: "6.1", titre: "Mettre en place son environnement d'apprentissage personnel" },
+            { num: "6.2", titre: "Mettre en œuvre des outils et stratégies de veille informationnelle" }
+        ]
+    }
+];
+
+// Structure des RP professionnels (stage)
+const rpsPro = [
+    {
+        titre: "Site laboratoire de biotechnologie",
+        url: "/portfolio/RPPro/tpPro-1",
+        description: "Développement d'un site web de gestion de stock pour le laboratoire de biotechnologie du Lycée Galilée",
+        competences: [
+            { num: "1.2", titre: "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique" },
+            { num: "3.2", titre: "Concevoir ou adapter une base de données" },
+            { num: "3.3", titre: "Participer à l'évolution d'un site Web exploitant les données de l'organisation" },
+            { num: "4.2", titre: "Planifier les activités" },
+            { num: "5.2", titre: "Déployer un service" }
+        ]
+    }
+];
+---
+
+<BaseLayout sections={sections}>
+    <h1>Mes réalisations professionnelles</h1>
+    
+    <section id="rp-cours">
+        <h2>RP Cours - Liste de mes RP classées par ordre alphabétique</h2>
+        <p class="intro">
+            Voici l'ensemble de mes réalisations professionnelles effectuées pendant ma formation. Pour chaque RP, vous trouverez les compétences du référentiel BTS SIO auxquelles elle contribue.
+            <br /><em>Cliquez sur le titre pour accéder aux détails (contexte, environnement technologique, preuves).</em>
+        </p>
+
+        <div class="rp-container">
+            {rps.map((rp) => (
+                <article class="rp-card">
+                    <h3><a href={rp.url} class="rp-title">{rp.titre}</a></h3>
+                    <p class="rp-description">{rp.description}</p>
+                    <div class="rp-competences">
+                        <strong>Compétences concernées :</strong>
+                        <ul>
+                            {rp.competences.map((comp) => (
+                                <li><span class="comp-num">{comp.num}</span> {comp.titre}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </article>
+            ))}
+        </div>
+    </section>
+
+    <section id="rp-pro">
+        <h2>RP Pro - Réalisations professionnelles en stage</h2>
+        <p class="intro">
+            Voici mes réalisations professionnelles effectuées lors de mon stage en entreprise.
+            <br /><em>Cliquez sur le titre pour accéder aux détails complets.</em>
+        </p>
+
+        <div class="rp-container">
+            {rpsPro.map((rp) => (
+                <article class="rp-card rp-pro-card">
+                    <h3><a href={rp.url} class="rp-title">{rp.titre}</a></h3>
+                    <p class="rp-description">{rp.description}</p>
+                    <div class="rp-competences">
+                        <strong>Compétences concernées :</strong>
+                        <ul>
+                            {rp.competences.map((comp) => (
+                                <li><span class="comp-num">{comp.num}</span> {comp.titre}</li>
+                            ))}
+                        </ul>
+                    </div>
+                </article>
+            ))}
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    section {
+        padding: 40px 0;
+    }
+
+    section:not(:last-child) {
+        border-bottom: 2px solid #333;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #a64dff;
+        font-size: 28px;
+    }
+
+    .intro {
+        max-width: 900px;
+        margin: 0 auto 40px;
+        font-size: 18px;
+        text-align: center;
+        color: #b0b0b0;
+    }
+
+    .intro em {
+        font-size: 16px;
+        color: #858383;
+    }
+
+    .rp-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .rp-card {
+        background: #262626;
+        border-left: 4px solid #a64dff;
+        margin-bottom: 25px;
+        padding: 25px;
+        border-radius: 10px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .rp-card:hover {
+        transform: translateX(5px);
+        box-shadow: 0 4px 15px rgba(166, 77, 255, 0.2);
+    }
+
+    .rp-pro-card {
+        border-left-color: #ffce47;
+    }
+
+    .rp-pro-card:hover {
+        box-shadow: 0 4px 15px rgba(255, 206, 71, 0.2);
+    }
+
+    .rp-title {
+        color: #a64dff;
+        text-decoration: none;
+        font-size: 22px;
+        font-weight: bold;
+        transition: color 0.2s ease;
+    }
+
+    .rp-title:hover {
+        color: #d9b3ff;
+        text-decoration: underline;
+    }
+
+    .rp-description {
+        color: #e6e6e6;
+        font-size: 16px;
+        margin: 15px 0;
+        line-height: 1.6;
+    }
+
+    .rp-competences {
+        color: #b0b0b0;
+        font-size: 15px;
+    }
+
+    .rp-competences strong {
+        color: #e6e6e6;
+    }
+
+    .rp-competences ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .rp-competences li {
+        padding: 5px 0;
+        border-left: 2px solid #444;
+        padding-left: 15px;
+        margin-bottom: 8px;
+        color: #b0b0b0;
+    }
+
+    .comp-num {
+        display: inline-block;
+        background: #a64dff;
+        color: #1a1a1a;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-weight: bold;
+        font-size: 13px;
+        margin-right: 8px;
+    }
+</style>
