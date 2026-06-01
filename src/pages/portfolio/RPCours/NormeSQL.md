@@ -6,7 +6,7 @@ titre: "Normes en SQL"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons fait du SQL. Pendant cette apprentissage nous avons appris à suivre des normes en SQL sur des contraintes de clé primaire et étrangère.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons travaillé le SQL avec un accent sur les normes de conception. J'ai appris à appliquer des conventions claires pour les clés primaires, clés étrangères et contraintes, afin de garantir la cohérence des données. Ce travail m'a aidé à produire des bases plus stables et plus simples à maintenir.
 
 ## Compétences concernées
 
@@ -17,7 +17,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé MySQL via WAMP.
+Pour cette réalisation, j'ai utilisé MySQL via WAMP et PhpMyAdmin pour tester les contraintes et vérifier les liens entre tables. J'ai pu observer l'impact des règles de normalisation sur la qualité des données et la fiabilité des requêtes. Cette pratique a renforcé ma rigueur dans la conception SQL.
 
 ## Preuves
 

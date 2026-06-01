@@ -6,7 +6,7 @@ titre: "Site web en Équipe"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus la Châtaigneraie, nous avons dû réaliser un site en équipe pour tester nos connaissances et compétences acquises jusque-là.
+Dans le cadre de mon **_BTS SIO_** au Campus la Châtaigneraie, nous avons réalisé un site en équipe pour mettre en pratique nos acquis dans un contexte collaboratif. J'ai appris à répartir les tâches, synchroniser mon travail avec celui des autres et respecter une direction technique commune. Cette expérience m'a permis de progresser autant sur la technique que sur l'organisation de projet.
 
 ## Compétences concernées
 
@@ -17,7 +17,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour réaliser ce site, j'ai utilisé plusieurs langages tels que : PHP, HTML, CSS et SQL.
+Pour réaliser ce site, j'ai utilisé PHP, HTML, CSS et SQL pour construire les pages, gérer les données et structurer l'interface. J'ai contribué à la mise en place des fonctionnalités et à l'intégration des éléments développés en équipe. Cela m'a aidé à mieux comprendre le développement web en mode projet.
 
 ## Preuves
 

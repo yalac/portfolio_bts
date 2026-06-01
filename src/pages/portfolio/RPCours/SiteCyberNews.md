@@ -6,7 +6,7 @@ titre: "Site CyberNews"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus la Châtaigneraie, nous avons dû réaliser une veille informatique en rapport avec la **cybersécurité**. Pour exploiter cette veille au mieux, nous avons créé un site qui contient toutes les veilles et actualités que l'on récupère.
+Dans le cadre de mon **_BTS SIO_** au Campus la Châtaigneraie, nous avons réalisé une veille en cybersécurité et construit un site pour publier les informations collectées. J'ai participé à l'organisation des contenus, à la structuration des pages et à la mise en forme des actualités pour les rendre plus accessibles. Ce projet m'a permis de combiner veille technologique et développement web.
 
 ## Compétences concernées
 
@@ -18,7 +18,7 @@ Les compétences concernées sont
 
 ## Environnement technologique
 
-Pour réaliser ce site, j'ai utilisé plusieurs langages tels que : PHP, HTML, CSS et SQL.
+Pour réaliser ce site, j'ai utilisé PHP, HTML, CSS et SQL pour gérer les contenus et les afficher de façon dynamique. J'ai pu relier les articles à une base de données, organiser l'affichage des informations et adapter l'interface pour une lecture plus claire. Cette stack m'a permis de construire un site évolutif centré sur la diffusion de veille.
 
 ## Preuves
 

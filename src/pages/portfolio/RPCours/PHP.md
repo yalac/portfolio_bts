@@ -6,7 +6,7 @@ titre: "Langage PHP"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons dû apprendre à utiliser PHP (Hypertext Preprocessor) pour développer nos sites.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons appris à utiliser PHP pour rendre nos sites dynamiques. J'ai pu manipuler des traitements serveur, récupérer des données de formulaires et générer des contenus adaptés selon les besoins. Cela m'a permis de dépasser un simple site statique et de mieux comprendre la logique back-end.
 
 ## Compétences concernées
 
@@ -17,7 +17,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé Visual Studio Code, PHP, HTML ainsi que WAMP pour certains programmes où j'avais besoin d'une base de données PhpMyAdmin.
+Pour cette réalisation, j'ai utilisé Visual Studio Code, PHP, HTML, WAMP et PhpMyAdmin pour développer et tester localement des pages connectées à une base de données. J'ai pu vérifier le cycle complet : saisie utilisateur, traitement PHP, stockage et affichage. Cette pratique m'a aidé à mieux structurer mes projets web.
 
 ## Preuves
 

@@ -5,7 +5,7 @@ titre: "Pare-feu"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai étudié les pare-feu comme éléments essentiels de la sécurité informatique pour protéger les réseaux et systèmes contre les menaces externes.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai étudié le rôle des pare-feu dans la protection des postes et des services. J'ai appris à analyser les flux entrants et sortants, à identifier les risques liés aux ports ouverts et à définir des règles adaptées au contexte d'utilisation. Cette approche m'a permis de mieux comprendre la sécurité au niveau réseau et système.
 
 ## Compétences concernées
 
@@ -16,11 +16,9 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé Windows Defender Firewall, et des machines virtuels pour faire des tests.
+Pour cette réalisation, j'ai utilisé Windows Defender Firewall et des machines virtuelles pour simuler différents cas de communication. J'ai testé l'effet de règles d'autorisation et de blocage sur des services réseau afin de vérifier leur impact sur l'accessibilité et la sécurité. Cette mise en pratique m'a aidé à configurer un filtrage plus précis.
 
 ## Preuves
 
 _Configuration du pare-feu_\
 ![Pare-feu](/images/preuves/rp/firewall.png)
-_Règles de filtrage_\
-![Règles](/images/preuves/rp/firewall-rules.png)

@@ -5,7 +5,7 @@ titre: "MAUI - Data Binding et MVVM"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai étudié les concepts avancés de MAUI comme le Data Binding (liaison de données) et le pattern MVVM (Model-View-ViewModel) pour structurer correctement les applications mobiles.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai étudié des concepts avancés de MAUI comme le Data Binding et le pattern MVVM pour structurer correctement une application mobile. J'ai compris comment séparer l'interface, la logique et les données afin de faciliter les évolutions et la maintenance. Cette méthode m'a permis de produire un code plus propre et plus lisible.
 
 ## Compétences concernées
 
@@ -16,11 +16,11 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé Jetbrains Rider, C#, XAML, MAUI, et des exemples de code pour le binding et l'architecture MVVM.
+Pour cette réalisation, j'ai utilisé JetBrains Rider, C#, XAML et MAUI pour créer des vues reliées à des ViewModels. J'ai mis en place des propriétés liées et des commandes afin de mettre à jour automatiquement l'interface selon les actions utilisateur. Cela m'a aidé à rendre l'application plus réactive et mieux structurée.
 
 ## Preuves
 
-_Exemple de Data Binding en XAML_\
-![Data Binding](/images/preuves/rp/maui-binding.png)
+_Exemple de Binding en XAML_\
+![Data Binding](/images/preuves/rp/mauiBinding.png)
 _Architecture MVVM implémentée_\
-![MVVM Architecture](/images/preuves/rp/maui-mvvm.png)
+![MVVM Architecture](/images/preuves/rp/mauiProject.png)

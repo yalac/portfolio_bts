@@ -39,3 +39,35 @@ p {
     margin-bottom: 20px;
     border-radius: 10px;
 }
+
+img[alt="Preuve MAUI"] {
+    max-width: 300px;
+}
+
+/* Centrer les preuves et les captures d'écran */
+.proof,
+.markdown-content .proof img {
+    display: block;
+    margin: 14px auto;
+    max-width: 820px;
+}
+
+/* Styles pour les extraits de code dans les preuves */
+pre, code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+}
+
+pre {
+    background: #111;
+    color: #e6e6e6;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: auto;
+    border: 1px solid rgba(255,255,255,0.03);
+}
+
+code.inline {
+    background: rgba(255,255,255,0.02);
+    padding: 2px 6px;
+    border-radius: 6px;
+}

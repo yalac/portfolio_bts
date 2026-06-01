@@ -1,0 +1,8 @@
+/* Styles spécifiques au header : place-holder pour futures améliorations */
+header {
+    /* header-specific overrides can be placed here */
+}
+
+.header-left .name {
+    letter-spacing: 0.6px;
+}

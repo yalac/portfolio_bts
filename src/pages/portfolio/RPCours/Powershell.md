@@ -1,12 +1,12 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
 
-titre: "Powershell"
+titre: "PowerShell"
 ---
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons appris à utiliser le langage Powershell. Nous avons aussi vu comment créer des savegardes grâce à celui-ci.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons appris à utiliser PowerShell pour automatiser des tâches d'administration. J'ai notamment travaillé sur des scripts de sauvegarde afin de fiabiliser des opérations répétitives et limiter les manipulations manuelles. Cette approche m'a permis de gagner en rigueur et en efficacité.
 
 ## Compétences concernées
 
@@ -17,11 +17,11 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé MySQL via WAMP ainsi que PhpMyAdmin.
+Pour cette réalisation, j'ai utilisé Windows PowerShell ISE pour écrire, tester et corriger mes scripts. J'ai pu automatiser des sauvegardes, organiser les chemins de destination et vérifier les résultats des exécutions. Cela m'a aidé à mieux comprendre l'administration système par script.
 
 ## Preuves
 
-_Windows Powershell ISE_\
-![Powershell ISE](/images/preuves/rp/PowershellISE.png)
-_Exemple d'un script de sauvegarde en powershell_\
+_Windows PowerShell ISE_\
+![PowerShell ISE](/images/preuves/rp/PowershellISE.png)
+_Exemple d'un script de sauvegarde en PowerShell_\
 ![Script sauvegarde](/images/preuves/rp/PowershellSauvegarde.png)

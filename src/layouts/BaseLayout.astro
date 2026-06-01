@@ -2,6 +2,7 @@
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
+import "../styles/pages.css";
 
 interface Props {
     sections?: { id: string; label: string }[];
@@ -20,7 +21,9 @@ const { sections } = Astro.props as Props;
     </head>
     <body>
         <Header sections={sections} />
-        <slot />
+        <main class="site-main">
+            <slot />
+        </main>
         <Footer />
         <script>
             import "../scripts/menu.js";

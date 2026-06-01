@@ -1,0 +1,310 @@
+/* Styles spécifiques aux pages (accueil, veille, rectorat, RP, lexique, mentions, certifications) */
+
+:root {
+    --page-accent: #a64dff;
+    --muted: #bdb6d6;
+    --page-surface: #1a1a1a;
+    --page-surface-2: #222232;
+    --page-border: rgba(255,255,255,0.08);
+}
+
+.site-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 16px 56px;
+}
+
+.site-main > :first-child {
+    margin-top: 0;
+}
+
+/* Améliore les titres de page */
+.page-title {
+    font-size: 2.2rem;
+    color: var(--page-accent);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Conteneur central pour les pages */
+.page-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+/* Style de cartes léger pour les sections */
+.page-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.12));
+    border: 1px solid var(--page-border);
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.16);
+}
+
+.section,
+.tool,
+.news-card,
+.tableau-card,
+.vocab-container,
+.accordion > summary,
+.page-card {
+    background-color: var(--page-surface);
+    border: 1px solid var(--page-border);
+    border-radius: 14px;
+}
+
+.section,
+.tool,
+.news-card,
+.tableau-card,
+.vocab-container {
+    box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
+.section,
+.tool,
+.tableau-card,
+.vocab-container,
+.page-card {
+    width: 100%;
+}
+
+.section,
+.tool,
+.news-card,
+.tableau-card,
+.vocab-container,
+.page-card {
+    transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.section:hover,
+.tool:hover,
+.news-card:hover,
+.tableau-card:hover,
+.vocab-container:hover,
+.page-card:hover {
+    border-color: rgba(166,77,255,0.25);
+    box-shadow: 0 16px 36px rgba(0,0,0,0.2);
+}
+
+.page-card h2,
+.page-card h3,
+.page-card h4 {
+    color: #ffd780;
+}
+
+.section,
+.tool,
+.news-card,
+.tableau-card,
+.vocab-container,
+.page-card {
+    padding: 18px;
+}
+
+.sort-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 0 0 16px;
+    padding: 12px 14px;
+    background: var(--page-surface-2);
+    border: 1px solid var(--page-border);
+    border-radius: 12px;
+}
+
+.search-container {
+    margin: 0 auto 18px;
+}
+
+.vocab-toolbar {
+    max-width: 1100px;
+}
+
+.sort-toolbar label {
+    color: var(--muted);
+    font-weight: 700;
+}
+
+.sort-toolbar input,
+.sort-toolbar select {
+    background: #101018;
+    color: #f5f5f5;
+    border: 1px solid rgba(166,77,255,0.35);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font: inherit;
+}
+
+.sort-toolbar input {
+    min-width: min(100%, 320px);
+}
+
+/* Lexique */
+.lexique-list li {
+    padding: 8px 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+}
+
+/* RP / preuves */
+.proof {
+    display: block;
+    margin: 10px auto;
+    max-width: 720px;
+}
+
+/* Petite amélioration des tableaux et liens */
+.tableau-card a {
+    color: var(--page-accent);
+    font-weight: 600;
+}
+
+.news-container {
+    max-width: 1100px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 420px));
+    gap: 18px;
+    justify-content: center;
+}
+
+.news-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.month-section {
+    display: grid;
+    gap: 14px;
+    justify-items: center;
+}
+
+/* Icônes automatiques pour PDF et Excel */
+a[href*=".pdf"] {
+    padding-left: 26px;
+    background: url('/images/icons/pdf.svg') no-repeat left center;
+    background-size: 20px 20px;
+}
+
+a[href$=".xlsx"],
+a[href$=".xls"] {
+    padding-left: 26px;
+    background: url('/images/icons/excel.svg') no-repeat left center;
+    background-size: 20px 20px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+    .page-container { padding: 8px; }
+}
+
+/* Deux colonnes pour formations / certifications */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+    margin-bottom: 14px;
+}
+
+@media (max-width: 960px) {
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Styles pour accordion details/summary */
+.accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--page-border);
+}
+
+.accordion summary h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+.accordion[open] {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+.accordion > :not(summary) {
+    padding: 14px 10px 6px;
+}
+
+.rectorat-panel {
+    gap: 8px;
+}
+
+.rectorat-card {
+    margin-bottom: 22px;
+}
+
+.rectorat-stack {
+    gap: 18px;
+}
+
+.vocab-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.vocab-container h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.vocab-container .description {
+    display: block;
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.vocab-list {
+    display: grid;
+    gap: 12px;
+}
+
+.vocab-list h2 {
+    margin-bottom: 0;
+}
+
+.vocab-list p,
+.vocab-list div {
+    margin-top: 0;
+}
+
+.news-container {
+    margin: 0 auto;
+}
+
+.news-container > h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.section h2,
+.news-container > h2,
+.vocab-container h1,
+.tableau-card h3 {
+    letter-spacing: 0.2px;
+}
+
+.vocab-list h2,
+.news-card h4,
+.tool h4 {
+    color: #ffd780;
+}

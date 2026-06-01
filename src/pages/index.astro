@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/index.css";
 
 const sections = [
     { id: "profil", label: "Profil" },
@@ -13,53 +14,83 @@ const sections = [
 ---
 
 <BaseLayout sections={sections}>
-    <h1>Bienvenue dans mon Portfolio !</h1>
-    <div class="container">
-        <div class="content">
-            <div class="section" id="profil">
-                <h2>Profil</h2>
-                <p>
-                    Je suis actuellement un étudiant en BTS SIO 2ème année (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs. Pour me contacter :
-                    voir <a href="/informations/about/"><u>ici</u></a>.
-                </p>
+    <section class="hero-card page-card">
+        <p class="eyebrow">Portfolio BTS SIO SLAM</p>
+        <h1>✨ Bienvenue dans mon Portfolio !</h1>
+        <p class="hero-text">
+            J’y rassemble mon parcours, mes compétences, mes réalisations et mes certifications dans un format plus lisible et plus cohérent.
+        </p>
+    </section>
+
+    <div class="home-grid">
+        <section class="section page-card" id="profil">
+            <h2>Profil</h2>
+            <p>
+                Je suis actuellement un étudiant en BTS SIO 2ème année (Service Informatique aux Organisations) en SLAM (solution logiciel application métier). Je suis quelqu’un d’organisée, de sérieux, et de travailleurs. Pour me contacter :
+                voir <a href="/informations/about/">ici</a>.
+            </p>
+        </section>
+
+        <section class="section page-card" id="exppro">
+            <h2>Expérience professionnelle</h2>
+            <div class="stacked-cards">
+                <article class="mini-card">
+                    <h3>Prakti.net</h3>
+                    <p>
+                        <span class="commentaire">5 janvier 2026 - 20 février 2026 | 7 semaines</span><br />
+                        Développement de la page d’accueil du site de l’entreprise avec WordPress et plusieurs plugins comme Elementor.
+                    </p>
+                </article>
+                <article class="mini-card">
+                    <h3>Lycée Galilée</h3>
+                    <p>
+                        <span class="commentaire">26 mai 2025 - 27 juin 2025 | 5 semaines</span><br />
+                        Développement d’un site Internet pour la gestion de stock de matériel de biotechnologie en PHP, HTML et CSS.
+                    </p>
+                </article>
             </div>
-            <div class="section" id="formations">
+        </section>
+
+        <div class="two-columns">
+            <section class="section page-card" id="formations">
                 <h2>Formations</h2>
                 <p>
                     2024-2025 | <b>BTS SIO</b> (Services Informatiques aux Organisations)<br />
                     <a href="https://www.la-chataigneraie.org/" target="_blank"><span class="commentaire">Campus la Chataigneraie</span></a><br />
-                    <u>Option</u> : <ul><li>SLAM (Solutions Logicielles et Applications Métiers) <span class="commentaire">(en cours de formation)</span></li></ul><br />
+                    <u>Option</u> : SLAM (Solutions Logicielles et Applications Métiers) <span class="commentaire">(en cours de formation)</span>
+                    <br /><br />
                     2024 | <b>Bac Général</b><br />
                     <a href="https://galilee.lycee.ac-normandie.fr/" target="_blank"><span class="commentaire">Lycée Galilée</span></a><br />
                     <u>Spécialités</u> :
-                    <ul>
-                        <li>Mathématiques</li>
-                        <li>Physique-Chimie</li>
-                        <li>Sciences de l’ingénieur</li>
-                    </ul>
-                    <u>Option</u> :
-                    <ul>
-                        <li>Sport</li>
-                    </ul>
                 </p>
-            </div>
-            <div class="section" id="exppro">
-                <h2>Expérience professionnelle</h2>
-                <p>
-                    Stage chez Prakti.net <span class="commentaire"
-                        >(5 janvier 2026 - 20 février 2026 || 7 semaines)<br />
-                        Développement de la page d’accueil du site de l’entreprise avec Wordpress et plusieurs plugins comme Elementor qui m’ont permis d’améliorer mes connaissances et la pages</span
-                    >
-                </p>
-                <p>
-                    Stage développeur Web <span class="commentaire"
-                        >(Lycée Galilée 26 mai - 27 juin 2025 || 5 semaines)<br />
-                        Pendant ce stage j’ai développé un site Internet pour la gestion de stock de matériel de biotechnologie du lycée en php, html, et css</span
-                    >
-                </p>
-            </div>
+                <ul>
+                    <li>Mathématiques</li>
+                    <li>Physique-Chimie</li>
+                    <li>Sciences de l’ingénieur</li>
+                </ul>
+                <p><u>Option</u> :</p>
+                <ul>
+                    <li>Sport</li>
+                </ul>
+            </section>
+
+            <section class="certifications page-card" id="certifications">
+                <h2><a href="/portfolio/certification/">Certifications et formations</a></h2>
+                <p>J'ai suivi plusieurs formations et obtenu plusieurs certifications :</p>
+                <ul class="clean-list">
+                    <li><a href="/portfolio/certification/">Atelier RGPD</a></li>
+                    <li><a href="/portfolio/certification/">MOOC de l'ANSSI</a></li>
+                    <li><a href="/portfolio/certification/">Pix</a></li>
+                    <li>Formation <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">HTML&CSS V8</a> sur FreeCodeCamp</li>
+                    <li>Formation <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank">JavaScript&Data V8</a> sur FreeCodeCamp</li>
+                    <li class="commentaire">Formations C (en cours) sur Codecademy</li>
+                    <li class="commentaire">Formations C++ (prévu) sur Codecademy</li>
+                    <li class="commentaire">Formations TypeScript (prévu) sur Codecademy</li>
+                </ul>
+            </section>
         </div>
-        <div class="section" id="competences">
+
+        <section class="section page-card" id="competences">
             <h2>Compétences</h2>
             <div class="competences-grid">
                 <ul>
@@ -113,112 +144,40 @@ const sections = [
                     <li>Outils - Feedly, Old Reader, Google Alert, Flipboard, Inoreader, NewsBlur</li>
                 </ul>
             </div>
-        </div>
-        <div class="section" id="langues">
-            <h2>Langues</h2>
-            <p>France (langue maternelle)</p>
-            <p>Anglais niveau B2</p>
-            <p>Allemand niveau A2</p>
-            <!--
-            <p>Estonien (quelque mot)</p>
-            <p>Japonais niveau A1</p>
-            -->
-        </div>
-        <div class="section certifications-loisirs">
-            <div class="certifications" id="certifications">
-                <h2><a href="/portfolio/certification/">Certifications et formations</a></h2>
-                <p>J'ai suivi plusieurs formations et obtenu plusieurs certifications :</p>
-                <ul>
-                    <li><a href="/portfolio/certification/">Atelier RGPD</a></li>
-                    <li><a href="/portfolio/certification/">MOOC de l'ANSSI</a></li>
-                    <li><a href="/portfolio/certification/">Pix</a></li>
-                    <li>Formation <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank">HTML&CSS V8</a> sur FreeCodeCamp (les 3 premiers cours)</li>
-                    <li>Formation <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" target="_blank">JavaScript&Data V8</a> sur FreeCodeCamp (jusqu'au 1er projet de certification)</li>
-                    <span class="commentaire"><li>Formations C (en cours) sur Codecademy</li></span>
-                    <span class="commentaire"><li>Formations C++ (prévu) sur Codecademy</li></span>
-                    <span class="commentaire"><li>Formations TypeScript (prévu) sur Codecademy</li></span>
-                    <span class="commentaire"><li>Formations Responsive Web Design certification (prévu) sur FreeCodeCamp</li></span>
-                    <span class="commentaire"><li>Formations JavaScript certification (prévu) sur FreeCodeCamp</li></span>
-                </ul>
-            </div>
-            <div class="loisirs" id="loisirs">
+        </section>
+
+        <div class="compact-row">
+            <section class="section page-card" id="langues">
+                <h2>Langues</h2>
+                <p>Français (langue maternelle)</p>
+                <p>Anglais niveau B2</p>
+                <p>Allemand niveau A2</p>
+            </section>
+
+            <section class="loisirs page-card" id="loisirs">
                 <h2>Loisirs</h2>
                 <p>
-                    Je fais partie d’un club de badminton dans la vallée de l'Andelle, où je prends plaisir à pratiquer ce sport et à m’impliquer dans différentes activités comme l'animation de séance de temps en temps, participation à des tournois
-                    ou à des événements spécifiquement organisé comme pour le téléthon, etc. Le sport occupe une place importante dans ma vie. La programmation occupe aussi une place importante sachant que je fait des formations, j'apprend par
-                    exemple Unity pour le développement de jeux vidéo, mais je développe aussi des projets personnels comme un site de gestion d'inventaire pour chez moi. De plus j'essaie d'approfondir plusieurs domaines de développement. Je suis
-                    aussi passionné par l'astronomie, j'aime regarder les étoiles apprendre des noms d'étoiles et voir comment cela évolue
+                    Je fais partie d’un club de badminton dans la vallée de l'Andelle, où je prends plaisir à pratiquer ce sport et à m’impliquer dans différentes activités comme l'animation de séance de temps en temps, participation à des tournois ou à des événements spécifiquement organisé comme pour le téléthon, etc.
+                    Le sport occupe une place importante dans ma vie. La programmation occupe aussi une place importante sachant que je fais des formations, j’apprends par exemple Unity pour le développement de jeux vidéo, mais je développe aussi des projets personnels comme un site de gestion d'inventaire pour chez moi.
+                    De plus, j’essaie d’approfondir plusieurs domaines de développement. Je suis aussi passionné par l’astronomie, j’aime regarder les étoiles, apprendre des noms d’étoiles et voir comment cela évolue.
                 </p>
-            </div>
+            </section>
         </div>
     </div>
 </BaseLayout>
 
 <style>
-    a {
-        color: #e6e6e6;
-        text-decoration: none;
-    }
+    .two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
 
-    a:hover {
-        text-decoration: underline;
-    }
-
-    h2 {
-        color: #e6e6e6;
-        border-bottom: 2px solid #a64dff;
-        padding-bottom: 5px;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    #profil,
-    #exppro,
-    #competences,
-    #formations,
-    #langues {
-        background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
-        margin: 10px;
-    }
-
-    /* Style pour les compétences */
-    .competences-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .competences-grid ul li {
-        margin-left: 35px;
-    }
-
-    .certifications-loisirs {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .certifications,
-    .loisirs {
-        width: 45%;
-        background-color: #333;
-        padding: 10px;
-        border-radius: 5px;
-        margin: 10px;
-    }
-
-    .commentaire {
-        font-style: italic;
-        color: #858383;
-        font-size: 15px;
-    }
+.compact-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
 </style>

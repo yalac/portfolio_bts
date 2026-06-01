@@ -1,12 +1,12 @@
 ---
 layout: ../../../layouts/MarkdownLayout.astro
 
-titre: "Conventions de nomages"
+titre: "Conventions de nommage"
 ---
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons fait du C#. Nous avons donc vu beaucoup de conventions de nomages en fonctions de ce que l'on écrit, comment faut-il l'écrire.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons travaillé en C# sur des projets de taille croissante. J'ai appris à appliquer les conventions de nommage selon le type d'élément (classes, méthodes, variables, constantes) afin de garder un code lisible, maintenable et cohérent en équipe. Cette pratique m'a aussi aidé à relire plus rapidement le code et à limiter les erreurs liées à des noms ambigus.
 
 ## Compétences concernées
 
@@ -17,11 +17,11 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé Rider.
+Pour cette réalisation, j'ai utilisé Rider comme environnement principal. Je m'en suis servi pour structurer les projets, nommer correctement les fichiers et symboles, et vérifier la cohérence du code avec les outils d'analyse intégrés. Cela m'a permis de mettre en pratique les conventions de nommage dans un cadre concret de développement.
 
 ## Preuves
 
 _Rider_\
 ![Rider](/images/preuves/rp/Rider.png)
-_Exemple des différentes conventions de nommages que j'au pu apprendre_\
+_Exemple des différentes conventions de nommage que j'ai pu apprendre_\
 ![Conventions de nommage](/images/preuves/rp/ConventionNommage.png)

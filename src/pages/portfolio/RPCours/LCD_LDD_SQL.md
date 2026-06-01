@@ -6,7 +6,7 @@ titre: "LCD et LDD en SQL"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons appris à manipuler le LCD (Langage de Contrôle des Données) et le LDD (Langage de Définition des Données) en SQL. Cela m'a permis d'apprendre à créer, modifier ou supprimer des structures de données ainsi que de gérer les droits utilisateurs.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons approfondi le LDD et le LCD en SQL pour structurer et administrer une base de données. J'ai appris à créer et modifier des tables, définir des contraintes, puis gérer les droits d'accès selon les profils utilisateurs. Cela m'a permis de mieux comprendre le lien entre architecture de données et sécurité d'utilisation.
 
 ## Compétences concernées
 
@@ -17,7 +17,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé MySQL via WAMP ainsi que PhpMyAdmin.
+Pour cette réalisation, j'ai utilisé MySQL via WAMP et PhpMyAdmin pour exécuter les commandes SQL et vérifier les effets sur la base. J'ai pu tester différentes configurations d'utilisateurs et de privilèges afin de contrôler l'accès aux données. Cette pratique m'a aidé à rendre mes manipulations plus rigoureuses.
 
 ## Preuves
 

@@ -5,7 +5,7 @@ titre: "Transact-SQL - Procédures Stockées et Triggers"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai approfondi Transact-SQL en apprenant à créer des procédures stockées et des triggers, des objets importants pour administrer et sécuriser les bases de données.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai approfondi Transact-SQL en travaillant sur les procédures stockées et les triggers. J'ai appris à automatiser certains traitements et à mieux contrôler les actions effectuées sur les données. Cette pratique m'a aidé à renforcer la fiabilité et la sécurité des opérations en base.
 
 ## Compétences concernées
 
@@ -16,7 +16,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé SQL Server Management Studio (SSMS) avec SQL Server.
+Pour cette réalisation, j'ai utilisé SQL Server Management Studio (SSMS) avec SQL Server pour écrire, tester et corriger des scripts T-SQL. J'ai pu analyser le comportement des procédures et vérifier l'exécution des triggers sur des cas concrets. Cela m'a permis de mieux maîtriser l'administration de bases relationnelles.
 
 ## Preuves
 

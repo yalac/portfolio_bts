@@ -10,6 +10,7 @@ const {frontmatter} = Astro.props;
     </head>
     <body>
         <h1>{frontmatter.titre}</h1>
+        <p>{frontmatter.date}</p>
         <div class="markdown-content">
             <slot />
         </div>

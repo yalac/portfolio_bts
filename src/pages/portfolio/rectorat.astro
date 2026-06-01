@@ -11,61 +11,94 @@ const sections = [
 ---
 
 <BaseLayout sections={sections}>
-    <h1>Résumé de mes compétences</h1>
-    <h2 id="epreuve-e5">Épreuve E5</h2>
-    <h3>Voici mon tableau de synthèse joint <a href="/documents/tableaux/YLA_TableauDeSynthese.xlsx" target="_blank">ici</a></h3>
-    <h3>Attestation de stage</h3>
-    <ul class="skills-list">
-        <li>
-            <div class="images-row">
-                <div class="img">
-                    1<sup>ère</sup> année de BTS SIO option SLAM
-                    <div>
-                        <a href="/documents/attestations/attestationStagePremiere.png" target="_blank" title="Attestation stage 1ère année">
-                            <Image src={ImageAttestation1} alt="Attestation de stage 1ère année" height={480} width={360} />
-                        </a>
+    <h1>📁 Résumé de mes compétences</h1>
+    <details class="accordion rectorat-panel page-card" open>
+        <summary>
+            <h2 id="epreuve-e5">Épreuve E5</h2>
+        </summary>
+        <div class="tableau-card rectorat-card">
+            <h3>Tableau de synthèse</h3>
+            <p>Fichier : <a href="/documents/tableaux/YLA_TableauDeSynthese.xlsx">YLA_TableauDeSynthese.xlsx</a></p>
+            <p>N° candidat : <span class="candidate-number">02248359720</span></p>
+        </div>
+        <div class="rectorat-stack">
+            <h3>Attestation de stage</h3>
+            <ul class="skills-list">
+                <li>
+                    <div class="images-row">
+                        <figure class="img">
+                            <figcaption>1<sup>ère</sup> année de BTS SIO option SLAM</figcaption>
+                            <a href="/documents/attestations/attestationStagePremiere.png" title="Attestation stage 1ère année">
+                                <Image src={ImageAttestation1} alt="Attestation de stage 1ère année" height={480} width={360} />
+                            </a>
+                        </figure>
+                        <figure class="img">
+                            <figcaption>2<sup>nde</sup> année de BTS SIO option SLAM</figcaption>
+                            <a href="/documents/attestations/attestationStageDeuxieme.png" title="Attestation stage 2nde année">
+                                <Image src={ImageAttestation2} alt="Attestation de stage 2nde année" height={480} width={360} />
+                            </a>
+                        </figure>
                     </div>
-                </div>
-                <div class="img">
-                    2<sup>nde</sup> année de BTS SIO option SLAM
-                    <div>
-                        <a href="/documents/attestations/attestationStageDeuxieme.png" target="_blank" title="Attestation stage 2nde année">
-                            <Image src={ImageAttestation2} alt="Attestation de stage 2nde année" height={480} width={360} />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
+                </li>
+            </ul>
+        </div>
+    </details>
 
-    <h2 id="epreuve-e6">Épreuve E6</h2>
+    <details class="accordion rectorat-panel page-card">
+        <summary>
+            <h2 id="epreuve-e6">Épreuve E6</h2>
+        </summary>
+        <div class="rectorat-stack">
+            <h3>FDRP (Fiche de rendu de projet)</h3>
+            <p class="rectorat-center">Ma 1<sup>ère</sup> FDRP : <a href="/portfolio/RPCours/FDRPUne">Voir la FDRP</a></p>
+            <p class="rectorat-center">Ma 2<sup>nde</sup> FDRP : <a href="/portfolio/RPCours/FDRPDeux">Voir la FDRP</a></p>
+        </div>
+    </details>
 </BaseLayout>
 
 <style>
     h2 {
         color: #a64dff;
-        margin-top: 20px;
+        margin-top: 0;
         text-align: center;
         font-size: 30px;
     }
 
     h3 {
-        color: #e6e6e6;
+        color: #ffd780;
         text-align: center;
         font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 5px;
+        margin: 18px 0 8px;
+    }
+
+    .rectorat-panel {
+        max-width: 1100px;
+        margin: 0 auto 18px;
+    }
+
+    .rectorat-stack {
+        display: grid;
+        gap: 14px;
+    }
+
+    .rectorat-center {
+        text-align: center;
+        margin: 0;
+        color: #e6e6e6;
     }
 
     .skills-list {
         list-style: none;
         text-align: center;
-        margin: 32px auto 32px;
+        margin: 0;
+        padding: 0;
     }
 
     .images-row {
         display: flex;
-        gap: 50px;
+        gap: 18px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .skills-list li {
@@ -73,9 +106,23 @@ const sections = [
     }
 
     .skills-list .img {
-        background-color: #333;
-        padding: 20px;
-        border-radius: 20px;
+        background: linear-gradient(180deg, #222232, #17171d);
+        padding: 18px;
+        border-radius: 18px;
+        border: 1px solid rgba(255,255,255,0.08);
+        display: grid;
+        gap: 12px;
+        justify-items: center;
+    }
+
+    .skills-list figcaption {
+        font-weight: 700;
+        color: #f1eff8;
+    }
+
+    .skills-list img {
+        border-radius: 12px;
+        box-shadow: 0 10px 26px rgba(0,0,0,0.18);
     }
 
     a {
@@ -85,5 +132,27 @@ const sections = [
 
     a:hover {
         text-decoration: underline;
+    }
+
+    .tableau-card {
+        background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(0,0,0,0.12));
+        padding: 18px;
+        border-radius: 14px;
+        max-width: 520px;
+        margin: 0 auto 20px;
+    }
+
+    .rectorat-panel > .tableau-card {
+        margin-top: 18px;
+    }
+
+    .tableau-card h3 {
+        margin: 0 0 8px 0;
+        color: #ffd780;
+    }
+
+    .candidate-number {
+        font-weight: 700;
+        color: #ffb3b3;
     }
 </style>

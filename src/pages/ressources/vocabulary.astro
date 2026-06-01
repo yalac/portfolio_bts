@@ -6,11 +6,23 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <script>
         import "../../scripts/recherche.js";
     </script>
-    <div class="search-container">
+    <script>
+        import "../../scripts/vocabSort.js";
+        if(window.initVocabSort) window.initVocabSort();
+    </script>
+    <div class="search-container sort-toolbar page-card vocab-toolbar">
         <input id="vocabulaire-recherche" type="text" placeholder="🔍 Rechercher un mot..." />
+        <label for="vocab-sort">Trier&nbsp;</label>
+        <select id="vocab-sort">
+            <option value="alpha-asc">Alpha A→Z</option>
+            <option value="alpha-desc">Alpha Z→A</option>
+            <option value="length-asc">Définition (court→long)</option>
+            <option value="length-desc">Définition (long→court)</option>
+            <option value="source">Par source</option>
+        </select>
     </div>
 
-    <div class="vocab-container">
+    <div class="vocab-container page-card">
         <h1>Dictionnaires</h1>
         <span class="description">Je vais, dans cette page, vous expliquer les mots compliqués que j'ai utilisés dans mon portfolio (définitions d'après différents sites).</span>
 

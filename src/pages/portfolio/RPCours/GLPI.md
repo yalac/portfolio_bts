@@ -6,7 +6,7 @@ titre: "GLPI (gestion d'incidents)"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons appris à utiliser le logiciel GLPI. Nous aavons aussi vu comme créer des savegardes grâce à celui-ci.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, nous avons appris à utiliser GLPI pour organiser le suivi des incidents et des demandes. J'ai compris l'importance de tracer les interventions, prioriser les tickets et maintenir un historique clair pour l'équipe technique. Cette pratique m'a permis de me rapprocher des méthodes utilisées en contexte professionnel.
 
 ## Compétences concernées
 
@@ -17,7 +17,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé GLPI.
+Pour cette réalisation, j'ai utilisé GLPI pour créer, catégoriser et suivre des tickets, puis documenter les résolutions. J'ai également manipulé les fonctionnalités utiles à l'administration quotidienne, comme la gestion des utilisateurs et des éléments de parc. Cela m'a aidé à mieux structurer le traitement des demandes.
 
 ## Preuves
 

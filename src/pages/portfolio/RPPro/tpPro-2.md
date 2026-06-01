@@ -7,7 +7,7 @@ date: "Réalisé en janvier-février 2026"
 
 ## Contexte
 
-Dans le cadre de mon **_stage_**, j'ai réalisé un site internet avec WordPress pour répondre à un besoin de communication et de présence en ligne.
+Dans le cadre de mon **_stage_**, j'ai réalisé un site internet avec WordPress pour répondre à un besoin concret de communication et de présence en ligne. J'ai travaillé sur la structuration des contenus, l'organisation des pages et la clarté de navigation pour faciliter l'accès à l'information. Ce projet m'a permis de produire un résultat utilisable rapidement par des utilisateurs non techniques.
 
 ## Mise en application
 
@@ -15,7 +15,7 @@ Ce projet a consisté à concevoir et mettre en ligne un site WordPress, structu
 
 ## Environnement technologique
 
-WordPress, thème et extensions, navigateur web, hébergement.
+Pour cette réalisation, j'ai utilisé WordPress avec un thème et des extensions adaptées aux besoins du site. J'ai configuré les pages, les menus et les contenus depuis l'interface d'administration, puis vérifié le rendu sur navigateur avant publication sur l'hébergement. Cette approche m'a permis de comprendre comment déployer et maintenir un site vitrine de façon efficace.
 
 ## Fonctionnalités principales
 
@@ -35,4 +35,4 @@ Les compétences concernées sont
 ## Preuves
 
 _Capture d'ecran du site_\
-![Preuve WordPress](/images/preuves/stage/wordpress-placeholder.png)
+![Preuve WordPress](/images/preuves/stage/wordpressTartu.png)

@@ -5,7 +5,7 @@ titre: "Framework Symfony"
 
 ## Contexte
 
-Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai appris à utiliser Symfony, un framework PHP orienté objet, pour développer des sites web exploitant les données de l'organisation.
+Dans le cadre de mon **_BTS SIO_** au Campus La Châtaigneraie, j'ai appris à utiliser Symfony pour structurer le développement d'applications web en PHP. J'ai compris l'intérêt d'une architecture organisée (routes, contrôleurs, templates) pour faciliter la maintenance et l'évolution d'un projet. Cette expérience m'a permis de passer à une approche plus professionnelle du développement web.
 
 ## Compétences concernées
 
@@ -16,7 +16,7 @@ La compétence concernée est
 
 ## Environnement technologique
 
-Pour cette réalisation, j'ai utilisé Visual Studio Code, PHP, Symfony, MySQL via WAMP, et Composer ainsi que d'autre composant pour symfony.
+Pour cette réalisation, j'ai utilisé Visual Studio Code, PHP, Symfony, MySQL via WAMP et Composer pour installer les dépendances et gérer le projet. J'ai pu développer des fonctionnalités reliées à la base de données et organiser le code selon les standards du framework. Cela m'a aidé à produire une application plus robuste et plus claire.
 
 ## Preuves
 

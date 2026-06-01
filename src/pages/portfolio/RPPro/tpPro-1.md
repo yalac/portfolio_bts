@@ -7,7 +7,7 @@ date: "Réalisé du 26/05/2025 au 27/06/2025"
 
 ## Contexte
 
-Dans le cadre de mon **_stage au Lycée Galilée_**, établissement public d'enseignement secondaire et supérieur, j'ai été affecté au service de contrôle qualité en biotechnologie, où je me suis consacré au développement d'un site internet afin de faciliter la gestion du stock de matériel pour la filière BTS BIOALC, que ce soit pour les professeurs ou les élèves.
+Dans le cadre de mon **_stage au Lycée Galilée_**, établissement public d'enseignement secondaire et supérieur, j'ai été affecté au service de contrôle qualité en biotechnologie. Ma mission principale était de développer un site internet pour simplifier la gestion du stock de matériel de la filière BTS BIOALC, aussi bien pour les professeurs que pour les élèves. Ce contexte m'a permis de travailler sur un besoin réel, avec des contraintes fonctionnelles précises et des utilisateurs identifiés.
 
 ## Mise en application
 
@@ -17,7 +17,7 @@ Le développement s’est appuyé sur une feuille de suivi existante et des Goog
 
 ## Environnement technologique
 
-Pour réaliser le site, j'ai utilisé Visual Studio Code pour la programmation en HTML, CSS, PHP et JSON. De plus, j'ai utilisé Wamp afin de visualiser en local ce que je faisais en temps réel, l'hébergeur FreeHostingNoAds et Paint pour réaliser des schémas et visualiser ce que je voulais faire avant de passer à la réalisation.
+Pour réaliser le site, j'ai utilisé Visual Studio Code pour la programmation en HTML, CSS, PHP et JSON. J'ai travaillé avec Wamp pour tester les fonctionnalités en local et vérifier chaque évolution avant mise en ligne, puis avec FreeHostingNoAds pour le déploiement. J'ai aussi utilisé Paint pour préparer des schémas de pages et clarifier la logique de certaines fonctionnalités avant implémentation.
 
 ## Fonctionnalités principales
 
@@ -25,37 +25,37 @@ Pour réaliser le site, j'ai utilisé Visual Studio Code pour la programmation e
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Saisie des quantités de matériel restant, catégorisation par salle et rangement, affichage des manques avec des codes couleurs et indication de la date du dernier réassort.<br>
     <span style="color:red">_Réalisation :_</span> Création de pages HTML et PHP pour la saisie et l’affichage dynamique des stocks avec codes couleurs ainsi qu'une ligne pour la date et le nom du dernier réassort.</span>
-    <img src="/images/preuves/stage/fonctionnaliteUn.png" alt="Preuve 1ere fonctionnalité" style="width:360px; height:280px">
+    <img src="/images/preuves/stage/fonctionnaliteUn.png" alt="Preuve 1re fonctionnalité" style="width:360px; height:280px">
 
 2. <span style="text-align:left; display:block">**Préparation du matériel pour les séances**</span>
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Saisie par les professeurs du matériel nécessaire pour la prochaine séance, anticipation de la préparation par les techniciens.<br>
     <span style="color:red">_Réalisation :_</span> Mise en place d’un tableau dédié pour les demandes des professeurs, avec gestion des quantités et visualisation par les techniciens.</span>
-    <img src="/images/preuves/stage/fonctionnaliteDeux.png" alt="Preuve 2eme fonctionnalité" style="width:360px; height:280px">
+    <img src="/images/preuves/stage/fonctionnaliteDeux.png" alt="Preuve 2e fonctionnalité" style="width:360px; height:280px">
 
 3. <span style="text-align:left; display:block">**Gestion spécifique pour la biochimie**</span>
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Adaptation de la gestion du stock selon la nouvelle réglementation pour la biochimie.<br>
     <span style="color:red">_Réalisation :_</span> Reprise de la structure existante pour la microbiologie, adaptation pour la biochimie, utilisation du JSON pour simplifier la gestion.</span>
-    <img src="/images/preuves/stage/fonctionnaliteTrois.png" alt="Preuve 3eme fonctionnalité" style="width:360px; height:300px">
+    <img src="/images/preuves/stage/fonctionnaliteTrois.png" alt="Preuve 3e fonctionnalité" style="width:360px; height:300px">
 
 4. <span style="text-align:left; display:block">**Amélioration de l’ergonomie**</span>
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Lisibilité et navigation facilitées entre les pages, menus et boutons intuitifs.<br>
     <span style="color:red">_Réalisation :_</span> Utilisation de CSS spécifique pour chaque page, ajout de menus et vérification de la conformité avec le W3C.</span>
-    <img src="/images/preuves/stage/fonctionnaliteQuatre.png" alt="Preuve 4eme fonctionnalité" style="width:360px; height:360px">
+    <img src="/images/preuves/stage/fonctionnaliteQuatre.png" alt="Preuve 4e fonctionnalité" style="width:360px; height:360px">
 
 5. <span style="text-align:left; display:block">**Zone de demande personnalisée**</span>
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Ajout d’un champ « Autre demande » pour les besoins spécifiques.<br>
     <span style="color:red">_Réalisation :_</span> Intégration d’une zone texte libre à la fin du formulaire avant de valider.</span>
-    <img src="/images/preuves/stage/fonctionnaliteCinq.png" alt="Preuve 5eme fonctionnalité" style="width:auto; height:auto">
+    <img src="/images/preuves/stage/fonctionnaliteCinq.png" alt="Preuve 5e fonctionnalité" style="width:auto; height:auto">
 
 6. <span style="text-align:left; display:block">**Signalement de la verrerie endommagée**</span>
 
     <span style="text-align:left; display:block"><span style="color:yellow">_Demande :_</span> Saisie de la verrerie endommagée ou cassée avec le nom et la date de la personne qui signale afin d'assurer la traçabilité.<br>
     <span style="color:red">_Réalisation :_</span> Création d’un tableau pour signaler la casse ou l’ébréchure de la verrerie, avec suivi nominatif et daté.</span>
-    <img src="/images/preuves/stage/fonctionnaliteSix.png" alt="Preuve 6eme fonctionnalité" style="width:360px; height:280px">
+    <img src="/images/preuves/stage/fonctionnaliteSix.png" alt="Preuve 6e fonctionnalité" style="width:360px; height:280px">
 
 Chaque fonctionnalité a été développée en concertation et validée par le maître de stage, afin de répondre précisément aux besoins.
 
@@ -83,3 +83,36 @@ _Deux exemples du code JSON utilisé_\
 ![Exemple de code JSON materiaux](/images/preuves/stage/codeStageJSONmateriel.png)\
 _Schéma réalisé avec Paint_\
 ![Exemple de paint](/images/preuves/stage/schemaPaint.png)
+
+### Extraits de code (exemples)
+
+```html
+<!-- Formulaire simplifié pour saisir une demande de matériel -->
+<form action="/stock/add.php" method="post">
+    <label for="item">Matériel</label>
+    <input id="item" name="item" required>
+    <label for="qty">Quantité</label>
+    <input id="qty" name="qty" type="number" min="0" value="1">
+    <button type="submit">Ajouter</button>
+</form>
+```
+
+```css
+/* Style simple pour l'affichage des lignes de stock */
+.stock-row { display:flex; gap:12px; align-items:center; padding:8px; }
+.stock-row.missing { background: rgba(255, 0, 0, 0.06); }
+```
+
+```php
+// insert simple en PHP (exemple)
+$stmt = $pdo->prepare('INSERT INTO stock(item, qty, updated_at) VALUES (?, ?, NOW())');
+$stmt->execute([$item, $qty]);
+```
+
+```json
+{
+    "name": "pipette",
+    "location": "salle A",
+    "quantity": 12
+}
+```
