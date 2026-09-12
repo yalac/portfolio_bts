@@ -1,50 +1,86 @@
-# Astro Starter Kit: Basics
+# Yanis LACAILLE – Portfolio
 
-Il s'agit la de mon portfolio crée à partir de Astro, un nouveau langage que j'apprend et que je trouve pratique
+Bienvenue sur mon portfolio personnel construit avec **Astro** 🚀  
+Ce site présente mes projets, compétences et expériences de manière claire et performante.
 
-```sh
-pnpm create astro@latest -- --template basics
+🔗 [Voir le site en ligne](https://portfolioynsl.netlify.app)
+
+---
+
+## 📸 Aperçu
+![Aperçu du portfolio](./public/images/profile/portfolioHome.png)
+
+---
+
+## 🛠 Stack technique
+
+- **Framework** : [Astro](https://astro.build/)
+- **Styling** : CSS natif + Astro
+- **Interactivité** : JavaScript vanilla
+- **Contenu** : Collections Astro + Markdown
+- **Hébergement** : [GitHub](https://github.com/) + [Netlify](https://www.netlify.com/)
+- **Outils** : Prettier, Visual Studio Code (+ autres d'extensions VSC)
+
+---
+
+
+## 🚀 Démarrage rapide
+
+### Prérequis
+
+- [Node.js](https://nodejs.org/) (v18+ recommandé)
+- [pnpm](https://pnpm.io/) / [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com/)
+
+### Installation
+
+```bash
+# Cloner le repository
+git clone [https://github.com/yalac/portfolio.git](https://github.com/yalac/portfolio.git)
+cd ton-repo
+
+# Installer les dépendances
+pnpm install
+# ou npm install / yarn install
+
+# Lancer le serveur de développement
+pnpm run dev
+# ou npm run dev / yarn dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+Le site sera disponible sur `http://localhost:4321`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## 🚀 Project Structure
+## 📦 Commandes disponibles
 
-Inside of your Astro project, you'll see the following folders and files:
+| Commande              | Description                                  |
+|-----------------------|----------------------------------------------|
+| `pnpm run dev`        | Lance le serveur de développement            |
+| `pnpm run build`      | Génère le site statique pour la production   |
+| `pnpm run preview`    | Prévisualise le build en local               |
+| `pnpm run lint`       | Vérifie le code avec ESLint                  |
+| `pnpm run format`     | Formate le code avec Prettier                |
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 📄 Licence
 
-## 🧞 Commands
+Ce projet est sous licence **MIT**. Tu es libre de l’utiliser et de le modifier pour ton propre portfolio.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## 🤝 Contact
 
-## 👀 Want to learn more?
+- 📧 Email : [lacailleyanis@gmail.com](mailto:lacailleyanis@gmail.com)
+- 💼 LinkedIn : [linkedin.com/in/yanis-la/](https://www.linkedin.com/in/yanis-la/)
+- 🐙 GitHub : [github.com/yalac](https://github.com/yalac)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+<div align="center">
+
+**Fait avec ❤️ et Astro**  
+⭐ Si ce projet t’aide, n’hésite pas à laisser une étoile !
+
+</div>
