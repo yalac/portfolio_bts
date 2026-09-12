@@ -1,7 +1,7 @@
 # Yanis LACAILLE – Portfolio
 
 Bienvenue sur mon portfolio personnel construit avec **Astro** 🚀  
-Ce site présente mes projets, compétences et expériences de manière claire et performante.
+Ce site présente mes projets, compétences et expériences.
 
 🔗 [Voir le site en ligne](https://portfolioynsl.netlify.app)
 
@@ -15,8 +15,8 @@ Ce site présente mes projets, compétences et expériences de manière claire e
 ## 🛠 Stack technique
 
 - **Framework** : [Astro](https://astro.build/)
-- **Styling** : CSS natif + Astro
-- **Interactivité** : JavaScript vanilla
+- **Styling** : CSS + Astro
+- **Interactivité** : JavaScript
 - **Contenu** : Collections Astro + Markdown
 - **Hébergement** : [GitHub](https://github.com/) + [Netlify](https://www.netlify.com/)
 - **Outils** : Prettier, Visual Studio Code (+ autres d'extensions VSC)
@@ -35,8 +35,8 @@ Ce site présente mes projets, compétences et expériences de manière claire e
 
 ```bash
 # Cloner le repository
-git clone [https://github.com/yalac/portfolio.git](https://github.com/yalac/portfolio.git)
-cd ton-repo
+git clone https://github.com/yalac/portfolio.git
+cd ton-clone
 
 # Installer les dépendances
 pnpm install
